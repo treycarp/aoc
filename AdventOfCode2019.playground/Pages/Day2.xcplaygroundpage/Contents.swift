@@ -13,9 +13,10 @@ func compute() throws {
     originalPositions[1] = "0"
     originalPositions[2] = "0"
     var opcodeIndex = 0
+    var found = false
     
-    while Int(originalPositions[1])! < 100 {
-        while Int(originalPositions[2])! < 100 {
+    while Int(originalPositions[1])! < 100 && !found {
+        while Int(originalPositions[2])! < 100 && !found {
             //print("Position2: \(originalPositions[2])")
             var tempPositions = originalPositions
             while opcodeIndex < tempPositions.count {
@@ -44,7 +45,8 @@ func compute() throws {
             //print("Completed position 0: \(tempPositions[0])")
             if tempPositions[0] == "19690720" {
                 print("Found!\nPosition 1: \(tempPositions[1])\nPosition 2: \(tempPositions[2])")
-                return
+                found = true
+                break
             }
             
             originalPositions[2] = String(Int(originalPositions[2])! + 1)
