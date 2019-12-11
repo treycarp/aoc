@@ -1,0 +1,1031 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXAggregateTarget section */
+		"Advent of Code::Advent of CodePackageTests::ProductTarget" /* Advent of CodePackageTests */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = OBJ_74 /* Build configuration list for PBXAggregateTarget "Advent of CodePackageTests" */;
+			buildPhases = (
+			);
+			dependencies = (
+				OBJ_77 /* PBXTargetDependency */,
+			);
+			name = "Advent of CodePackageTests";
+			productName = "Advent of CodePackageTests";
+		};
+/* End PBXAggregateTarget section */
+
+/* Begin PBXBuildFile section */
+		003593B3239F2FBB00255594 /* Input.swift in Sources */ = {isa = PBXBuildFile; fileRef = 003593B2239F2FBB00255594 /* Input.swift */; };
+		003593B8239F34E900255594 /* Day1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 003593AF239F0ED600255594 /* Day1.swift */; };
+		003593BC239F356000255594 /* Day.swift in Sources */ = {isa = PBXBuildFile; fileRef = 003593BB239F356000255594 /* Day.swift */; };
+		003593BF239F3F2100255594 /* Day2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 003593BE239F3F2100255594 /* Day2.swift */; };
+		003593C2239F4DA000255594 /* Intcode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 003593C1239F4DA000255594 /* Intcode.swift */; };
+		003593C5239F4DFD00255594 /* Day5.swift in Sources */ = {isa = PBXBuildFile; fileRef = 003593C4239F4DFD00255594 /* Day5.swift */; };
+		003593C8239F556900255594 /* Numbers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 003593C7239F556900255594 /* Numbers.swift */; };
+		003593CB239F5F3D00255594 /* Day10.swift in Sources */ = {isa = PBXBuildFile; fileRef = 003593CA239F5F3D00255594 /* Day10.swift */; };
+		003593CE23A0197500255594 /* Amp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 003593CD23A0197500255594 /* Amp.swift */; };
+		003593D023A019BA00255594 /* Array.swift in Sources */ = {isa = PBXBuildFile; fileRef = 003593CF23A019BA00255594 /* Array.swift */; };
+		003593D323A04EEA00255594 /* Day7.swift in Sources */ = {isa = PBXBuildFile; fileRef = 003593D223A04EEA00255594 /* Day7.swift */; };
+		OBJ_31 /* AOC.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_9 /* AOC.swift */; };
+		OBJ_33 /* AOC2019.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "Advent of Code::AOC2019::Product" /* AOC2019.framework */; };
+		OBJ_34 /* AOCShared.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "Advent of Code::AOCShared::Product" /* AOCShared.framework */; };
+		OBJ_43 /* AOC2019.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_11 /* AOC2019.swift */; };
+		OBJ_45 /* AOCShared.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "Advent of Code::AOCShared::Product" /* AOCShared.framework */; };
+		OBJ_51 /* AOCShared.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_13 /* AOCShared.swift */; };
+		OBJ_58 /* AdventOfCodeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_18 /* AdventOfCodeTests.swift */; };
+		OBJ_59 /* XCTestManifests.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_19 /* XCTestManifests.swift */; };
+		OBJ_61 /* AOC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "Advent of Code::AOC::Product" /* AOC.framework */; };
+		OBJ_62 /* AOC2019.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "Advent of Code::AOC2019::Product" /* AOC2019.framework */; };
+		OBJ_63 /* AOCShared.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "Advent of Code::AOCShared::Product" /* AOCShared.framework */; };
+		OBJ_72 /* Package.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_6 /* Package.swift */; };
+		OBJ_83 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_15 /* main.swift */; };
+		OBJ_85 /* AOC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "Advent of Code::AOC::Product" /* AOC.framework */; };
+		OBJ_86 /* AOC2019.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "Advent of Code::AOC2019::Product" /* AOC2019.framework */; };
+		OBJ_87 /* AOCShared.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "Advent of Code::AOCShared::Product" /* AOCShared.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		003593A4239F0E5400255594 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = OBJ_1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = "Advent of Code::AOC";
+			remoteInfo = AOC;
+		};
+		003593A5239F0E5400255594 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = OBJ_1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = "Advent of Code::AOC2019";
+			remoteInfo = AOC2019;
+		};
+		003593A6239F0E5400255594 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = OBJ_1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = "Advent of Code::AOCShared";
+			remoteInfo = AOCShared;
+		};
+		003593A7239F0E5400255594 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = OBJ_1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = "Advent of Code::AOCShared";
+			remoteInfo = AOCShared;
+		};
+		003593A8239F0E5400255594 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = OBJ_1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = "Advent of Code::AOC2019";
+			remoteInfo = AOC2019;
+		};
+		003593A9239F0E5400255594 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = OBJ_1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = "Advent of Code::AOCShared";
+			remoteInfo = AOCShared;
+		};
+		003593AA239F0E5400255594 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = OBJ_1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = "Advent of Code::AOC";
+			remoteInfo = AOC;
+		};
+		003593AB239F0E5400255594 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = OBJ_1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = "Advent of Code::AOC2019";
+			remoteInfo = AOC2019;
+		};
+		003593AC239F0E5400255594 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = OBJ_1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = "Advent of Code::AOCShared";
+			remoteInfo = AOCShared;
+		};
+		003593AD239F0E5500255594 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = OBJ_1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = "Advent of Code::AOCTests";
+			remoteInfo = AOCTests;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		003593AF239F0ED600255594 /* Day1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Day1.swift; sourceTree = "<group>"; };
+		003593B1239F2FAA00255594 /* Day1Input.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = Day1Input.txt; sourceTree = "<group>"; };
+		003593B2239F2FBB00255594 /* Input.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Input.swift; sourceTree = "<group>"; };
+		003593BB239F356000255594 /* Day.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Day.swift; sourceTree = "<group>"; };
+		003593BE239F3F2100255594 /* Day2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Day2.swift; sourceTree = "<group>"; };
+		003593C0239F459B00255594 /* Day2Input.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = Day2Input.txt; sourceTree = "<group>"; };
+		003593C1239F4DA000255594 /* Intcode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Intcode.swift; sourceTree = "<group>"; };
+		003593C4239F4DFD00255594 /* Day5.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Day5.swift; sourceTree = "<group>"; };
+		003593C6239F4F0E00255594 /* Day5Input.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = Day5Input.txt; sourceTree = "<group>"; };
+		003593C7239F556900255594 /* Numbers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Numbers.swift; sourceTree = "<group>"; };
+		003593CA239F5F3D00255594 /* Day10.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Day10.swift; sourceTree = "<group>"; };
+		003593CC239F61C100255594 /* Day10Input.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = Day10Input.txt; sourceTree = "<group>"; };
+		003593CD23A0197500255594 /* Amp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Amp.swift; sourceTree = "<group>"; };
+		003593CF23A019BA00255594 /* Array.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Array.swift; sourceTree = "<group>"; };
+		003593D223A04EEA00255594 /* Day7.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Day7.swift; sourceTree = "<group>"; };
+		003593D423A04F6300255594 /* Day7Input.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = Day7Input.txt; sourceTree = "<group>"; };
+		"Advent of Code::AOC2019::Product" /* AOC2019.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AOC2019.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		"Advent of Code::AOC::Product" /* AOC.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AOC.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		"Advent of Code::AOCShared::Product" /* AOCShared.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AOCShared.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		"Advent of Code::AOCTests::Product" /* AOCTests.xctest */ = {isa = PBXFileReference; lastKnownFileType = file; path = AOCTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		"Advent of Code::trey::Product" /* trey */ = {isa = PBXFileReference; lastKnownFileType = text; path = trey; sourceTree = BUILT_PRODUCTS_DIR; };
+		OBJ_11 /* AOC2019.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AOC2019.swift; sourceTree = "<group>"; };
+		OBJ_13 /* AOCShared.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AOCShared.swift; sourceTree = "<group>"; };
+		OBJ_15 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		OBJ_18 /* AdventOfCodeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdventOfCodeTests.swift; sourceTree = "<group>"; };
+		OBJ_19 /* XCTestManifests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XCTestManifests.swift; sourceTree = "<group>"; };
+		OBJ_6 /* Package.swift */ = {isa = PBXFileReference; explicitFileType = sourcecode.swift; path = Package.swift; sourceTree = "<group>"; };
+		OBJ_9 /* AOC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AOC.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		OBJ_32 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 0;
+			files = (
+				OBJ_33 /* AOC2019.framework in Frameworks */,
+				OBJ_34 /* AOCShared.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		OBJ_44 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 0;
+			files = (
+				OBJ_45 /* AOCShared.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		OBJ_52 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		OBJ_60 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 0;
+			files = (
+				OBJ_61 /* AOC.framework in Frameworks */,
+				OBJ_62 /* AOC2019.framework in Frameworks */,
+				OBJ_63 /* AOCShared.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		OBJ_84 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 0;
+			files = (
+				OBJ_85 /* AOC.framework in Frameworks */,
+				OBJ_86 /* AOC2019.framework in Frameworks */,
+				OBJ_87 /* AOCShared.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		003593AE239F0EB600255594 /* Day1 */ = {
+			isa = PBXGroup;
+			children = (
+				003593AF239F0ED600255594 /* Day1.swift */,
+				003593B1239F2FAA00255594 /* Day1Input.txt */,
+			);
+			path = Day1;
+			sourceTree = "<group>";
+		};
+		003593BD239F3F1000255594 /* Day2 */ = {
+			isa = PBXGroup;
+			children = (
+				003593BE239F3F2100255594 /* Day2.swift */,
+				003593C0239F459B00255594 /* Day2Input.txt */,
+			);
+			path = Day2;
+			sourceTree = "<group>";
+		};
+		003593C3239F4DF000255594 /* Day5 */ = {
+			isa = PBXGroup;
+			children = (
+				003593C4239F4DFD00255594 /* Day5.swift */,
+				003593C6239F4F0E00255594 /* Day5Input.txt */,
+			);
+			path = Day5;
+			sourceTree = "<group>";
+		};
+		003593C9239F5F2F00255594 /* Day10 */ = {
+			isa = PBXGroup;
+			children = (
+				003593CA239F5F3D00255594 /* Day10.swift */,
+				003593CC239F61C100255594 /* Day10Input.txt */,
+			);
+			path = Day10;
+			sourceTree = "<group>";
+		};
+		003593D123A04ED400255594 /* Day7 */ = {
+			isa = PBXGroup;
+			children = (
+				003593CD23A0197500255594 /* Amp.swift */,
+				003593D223A04EEA00255594 /* Day7.swift */,
+				003593D423A04F6300255594 /* Day7Input.txt */,
+			);
+			path = Day7;
+			sourceTree = "<group>";
+		};
+		OBJ_10 /* AOC2019 */ = {
+			isa = PBXGroup;
+			children = (
+				003593AE239F0EB600255594 /* Day1 */,
+				003593BD239F3F1000255594 /* Day2 */,
+				003593C3239F4DF000255594 /* Day5 */,
+				003593D123A04ED400255594 /* Day7 */,
+				003593C9239F5F2F00255594 /* Day10 */,
+				OBJ_11 /* AOC2019.swift */,
+			);
+			name = AOC2019;
+			path = Sources/AOC2019;
+			sourceTree = SOURCE_ROOT;
+		};
+		OBJ_12 /* AOCShared */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_13 /* AOCShared.swift */,
+				003593B2239F2FBB00255594 /* Input.swift */,
+				003593BB239F356000255594 /* Day.swift */,
+				003593C1239F4DA000255594 /* Intcode.swift */,
+				003593C7239F556900255594 /* Numbers.swift */,
+				003593CF23A019BA00255594 /* Array.swift */,
+			);
+			name = AOCShared;
+			path = Sources/AOCShared;
+			sourceTree = SOURCE_ROOT;
+		};
+		OBJ_14 /* trey */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_15 /* main.swift */,
+			);
+			name = trey;
+			path = Sources/trey;
+			sourceTree = SOURCE_ROOT;
+		};
+		OBJ_16 /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_17 /* AOCTests */,
+			);
+			name = Tests;
+			sourceTree = SOURCE_ROOT;
+		};
+		OBJ_17 /* AOCTests */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_18 /* AdventOfCodeTests.swift */,
+				OBJ_19 /* XCTestManifests.swift */,
+			);
+			name = AOCTests;
+			path = Tests/AOCTests;
+			sourceTree = SOURCE_ROOT;
+		};
+		OBJ_20 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				"Advent of Code::AOC2019::Product" /* AOC2019.framework */,
+				"Advent of Code::AOCShared::Product" /* AOCShared.framework */,
+				"Advent of Code::AOC::Product" /* AOC.framework */,
+				"Advent of Code::AOCTests::Product" /* AOCTests.xctest */,
+				"Advent of Code::trey::Product" /* trey */,
+			);
+			name = Products;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		OBJ_5 /*  */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_6 /* Package.swift */,
+				OBJ_7 /* Sources */,
+				OBJ_16 /* Tests */,
+				OBJ_20 /* Products */,
+			);
+			name = "";
+			sourceTree = "<group>";
+		};
+		OBJ_7 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_8 /* AOC */,
+				OBJ_10 /* AOC2019 */,
+				OBJ_12 /* AOCShared */,
+				OBJ_14 /* trey */,
+			);
+			name = Sources;
+			sourceTree = SOURCE_ROOT;
+		};
+		OBJ_8 /* AOC */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_9 /* AOC.swift */,
+			);
+			name = AOC;
+			path = Sources/AOC;
+			sourceTree = SOURCE_ROOT;
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		"Advent of Code::AOC" /* AOC */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = OBJ_27 /* Build configuration list for PBXNativeTarget "AOC" */;
+			buildPhases = (
+				OBJ_30 /* Sources */,
+				OBJ_32 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				OBJ_35 /* PBXTargetDependency */,
+				OBJ_37 /* PBXTargetDependency */,
+			);
+			name = AOC;
+			productName = AOC;
+			productReference = "Advent of Code::AOC::Product" /* AOC.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		"Advent of Code::AOC2019" /* AOC2019 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = OBJ_39 /* Build configuration list for PBXNativeTarget "AOC2019" */;
+			buildPhases = (
+				OBJ_42 /* Sources */,
+				OBJ_44 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				OBJ_46 /* PBXTargetDependency */,
+			);
+			name = AOC2019;
+			productName = AOC2019;
+			productReference = "Advent of Code::AOC2019::Product" /* AOC2019.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		"Advent of Code::AOCShared" /* AOCShared */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = OBJ_47 /* Build configuration list for PBXNativeTarget "AOCShared" */;
+			buildPhases = (
+				OBJ_50 /* Sources */,
+				OBJ_52 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AOCShared;
+			productName = AOCShared;
+			productReference = "Advent of Code::AOCShared::Product" /* AOCShared.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		"Advent of Code::AOCTests" /* AOCTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = OBJ_54 /* Build configuration list for PBXNativeTarget "AOCTests" */;
+			buildPhases = (
+				OBJ_57 /* Sources */,
+				OBJ_60 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				OBJ_64 /* PBXTargetDependency */,
+				OBJ_65 /* PBXTargetDependency */,
+				OBJ_66 /* PBXTargetDependency */,
+			);
+			name = AOCTests;
+			productName = AOCTests;
+			productReference = "Advent of Code::AOCTests::Product" /* AOCTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		"Advent of Code::SwiftPMPackageDescription" /* Advent of CodePackageDescription */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = OBJ_68 /* Build configuration list for PBXNativeTarget "Advent of CodePackageDescription" */;
+			buildPhases = (
+				OBJ_71 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Advent of CodePackageDescription";
+			productName = "Advent of CodePackageDescription";
+			productType = "com.apple.product-type.framework";
+		};
+		"Advent of Code::trey" /* trey */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = OBJ_79 /* Build configuration list for PBXNativeTarget "trey" */;
+			buildPhases = (
+				OBJ_82 /* Sources */,
+				OBJ_84 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				OBJ_88 /* PBXTargetDependency */,
+				OBJ_89 /* PBXTargetDependency */,
+				OBJ_90 /* PBXTargetDependency */,
+			);
+			name = trey;
+			productName = trey;
+			productReference = "Advent of Code::trey::Product" /* trey */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		OBJ_1 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftMigration = 9999;
+				LastUpgradeCheck = 9999;
+			};
+			buildConfigurationList = OBJ_2 /* Build configuration list for PBXProject "Advent of Code" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = OBJ_5 /*  */;
+			productRefGroup = OBJ_20 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				"Advent of Code::AOC" /* AOC */,
+				"Advent of Code::AOC2019" /* AOC2019 */,
+				"Advent of Code::AOCShared" /* AOCShared */,
+				"Advent of Code::AOCTests" /* AOCTests */,
+				"Advent of Code::SwiftPMPackageDescription" /* Advent of CodePackageDescription */,
+				"Advent of Code::Advent of CodePackageTests::ProductTarget" /* Advent of CodePackageTests */,
+				"Advent of Code::trey" /* trey */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		OBJ_30 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 0;
+			files = (
+				003593C2239F4DA000255594 /* Intcode.swift in Sources */,
+				003593C5239F4DFD00255594 /* Day5.swift in Sources */,
+				003593CB239F5F3D00255594 /* Day10.swift in Sources */,
+				003593B3239F2FBB00255594 /* Input.swift in Sources */,
+				003593BF239F3F2100255594 /* Day2.swift in Sources */,
+				003593C8239F556900255594 /* Numbers.swift in Sources */,
+				003593D023A019BA00255594 /* Array.swift in Sources */,
+				003593B8239F34E900255594 /* Day1.swift in Sources */,
+				003593BC239F356000255594 /* Day.swift in Sources */,
+				003593CE23A0197500255594 /* Amp.swift in Sources */,
+				003593D323A04EEA00255594 /* Day7.swift in Sources */,
+				OBJ_31 /* AOC.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		OBJ_42 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 0;
+			files = (
+				OBJ_43 /* AOC2019.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		OBJ_50 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 0;
+			files = (
+				OBJ_51 /* AOCShared.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		OBJ_57 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 0;
+			files = (
+				OBJ_58 /* AdventOfCodeTests.swift in Sources */,
+				OBJ_59 /* XCTestManifests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		OBJ_71 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 0;
+			files = (
+				OBJ_72 /* Package.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		OBJ_82 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 0;
+			files = (
+				OBJ_83 /* main.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		OBJ_35 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = "Advent of Code::AOC2019" /* AOC2019 */;
+			targetProxy = 003593A5239F0E5400255594 /* PBXContainerItemProxy */;
+		};
+		OBJ_37 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = "Advent of Code::AOCShared" /* AOCShared */;
+			targetProxy = 003593A7239F0E5400255594 /* PBXContainerItemProxy */;
+		};
+		OBJ_46 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = "Advent of Code::AOCShared" /* AOCShared */;
+			targetProxy = 003593A6239F0E5400255594 /* PBXContainerItemProxy */;
+		};
+		OBJ_64 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = "Advent of Code::AOC" /* AOC */;
+			targetProxy = 003593AA239F0E5400255594 /* PBXContainerItemProxy */;
+		};
+		OBJ_65 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = "Advent of Code::AOC2019" /* AOC2019 */;
+			targetProxy = 003593AB239F0E5400255594 /* PBXContainerItemProxy */;
+		};
+		OBJ_66 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = "Advent of Code::AOCShared" /* AOCShared */;
+			targetProxy = 003593AC239F0E5400255594 /* PBXContainerItemProxy */;
+		};
+		OBJ_77 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = "Advent of Code::AOCTests" /* AOCTests */;
+			targetProxy = 003593AD239F0E5500255594 /* PBXContainerItemProxy */;
+		};
+		OBJ_88 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = "Advent of Code::AOC" /* AOC */;
+			targetProxy = 003593A4239F0E5400255594 /* PBXContainerItemProxy */;
+		};
+		OBJ_89 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = "Advent of Code::AOC2019" /* AOC2019 */;
+			targetProxy = 003593A8239F0E5400255594 /* PBXContainerItemProxy */;
+		};
+		OBJ_90 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = "Advent of Code::AOCShared" /* AOCShared */;
+			targetProxy = 003593A9239F0E5400255594 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		OBJ_28 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = "$(inherited)";
+				INFOPLIST_FILE = "Advent of Code.xcodeproj/AOC_Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) $(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				OTHER_CFLAGS = "$(inherited)";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = AOC;
+				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited)";
+				SWIFT_VERSION = 5.0;
+				TARGET_NAME = AOC;
+				TVOS_DEPLOYMENT_TARGET = 9.0;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Debug;
+		};
+		OBJ_29 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = "$(inherited)";
+				INFOPLIST_FILE = "Advent of Code.xcodeproj/AOC_Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) $(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				OTHER_CFLAGS = "$(inherited)";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = AOC;
+				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited)";
+				SWIFT_VERSION = 5.0;
+				TARGET_NAME = AOC;
+				TVOS_DEPLOYMENT_TARGET = 9.0;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Release;
+		};
+		OBJ_3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_NS_ASSERTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"SWIFT_PACKAGE=1",
+					"DEBUG=1",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_SWIFT_FLAGS = "$(inherited) -DXcode";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SUPPORTED_PLATFORMS = "macosx iphoneos iphonesimulator appletvos appletvsimulator watchos watchsimulator";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) SWIFT_PACKAGE DEBUG";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				USE_HEADERMAP = NO;
+			};
+			name = Debug;
+		};
+		OBJ_4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_OPTIMIZATION_LEVEL = s;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"SWIFT_PACKAGE=1",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				OTHER_SWIFT_FLAGS = "$(inherited) -DXcode";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SUPPORTED_PLATFORMS = "macosx iphoneos iphonesimulator appletvos appletvsimulator watchos watchsimulator";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) SWIFT_PACKAGE";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				USE_HEADERMAP = NO;
+			};
+			name = Release;
+		};
+		OBJ_40 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = "$(inherited)";
+				INFOPLIST_FILE = "Advent of Code.xcodeproj/AOC2019_Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) $(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				OTHER_CFLAGS = "$(inherited)";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = AOC2019;
+				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited)";
+				SWIFT_VERSION = 5.0;
+				TARGET_NAME = AOC2019;
+				TVOS_DEPLOYMENT_TARGET = 9.0;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Debug;
+		};
+		OBJ_41 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = "$(inherited)";
+				INFOPLIST_FILE = "Advent of Code.xcodeproj/AOC2019_Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) $(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				OTHER_CFLAGS = "$(inherited)";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = AOC2019;
+				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited)";
+				SWIFT_VERSION = 5.0;
+				TARGET_NAME = AOC2019;
+				TVOS_DEPLOYMENT_TARGET = 9.0;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Release;
+		};
+		OBJ_48 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = "$(inherited)";
+				INFOPLIST_FILE = "Advent of Code.xcodeproj/AOCShared_Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) $(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				OTHER_CFLAGS = "$(inherited)";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = AOCShared;
+				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited)";
+				SWIFT_VERSION = 5.0;
+				TARGET_NAME = AOCShared;
+				TVOS_DEPLOYMENT_TARGET = 9.0;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Debug;
+		};
+		OBJ_49 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = "$(inherited)";
+				INFOPLIST_FILE = "Advent of Code.xcodeproj/AOCShared_Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) $(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				OTHER_CFLAGS = "$(inherited)";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = AOCShared;
+				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited)";
+				SWIFT_VERSION = 5.0;
+				TARGET_NAME = AOCShared;
+				TVOS_DEPLOYMENT_TARGET = 9.0;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Release;
+		};
+		OBJ_55 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = "$(inherited)";
+				INFOPLIST_FILE = "Advent of Code.xcodeproj/AOCTests_Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @loader_path/../Frameworks @loader_path/Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				OTHER_CFLAGS = "$(inherited)";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited)";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited)";
+				SWIFT_VERSION = 5.0;
+				TARGET_NAME = AOCTests;
+				TVOS_DEPLOYMENT_TARGET = 9.0;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Debug;
+		};
+		OBJ_56 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = "$(inherited)";
+				INFOPLIST_FILE = "Advent of Code.xcodeproj/AOCTests_Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @loader_path/../Frameworks @loader_path/Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				OTHER_CFLAGS = "$(inherited)";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited)";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited)";
+				SWIFT_VERSION = 5.0;
+				TARGET_NAME = AOCTests;
+				TVOS_DEPLOYMENT_TARGET = 9.0;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Release;
+		};
+		OBJ_69 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				LD = /usr/bin/true;
+				OTHER_SWIFT_FLAGS = "-swift-version 5 -I $(TOOLCHAIN_DIR)/usr/lib/swift/pm/4_2 -target x86_64-apple-macosx10.10 -sdk /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk -package-description-version 5.1";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		OBJ_70 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				LD = /usr/bin/true;
+				OTHER_SWIFT_FLAGS = "-swift-version 5 -I $(TOOLCHAIN_DIR)/usr/lib/swift/pm/4_2 -target x86_64-apple-macosx10.10 -sdk /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk -package-description-version 5.1";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		OBJ_75 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Debug;
+		};
+		OBJ_76 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Release;
+		};
+		OBJ_80 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = "$(inherited)";
+				INFOPLIST_FILE = "Advent of Code.xcodeproj/trey_Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) $(TOOLCHAIN_DIR)/usr/lib/swift/macosx @executable_path";
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				OTHER_CFLAGS = "$(inherited)";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited)";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited)";
+				SWIFT_FORCE_DYNAMIC_LINK_STDLIB = YES;
+				SWIFT_FORCE_STATIC_LINK_STDLIB = NO;
+				SWIFT_VERSION = 5.0;
+				TARGET_NAME = trey;
+				TVOS_DEPLOYMENT_TARGET = 9.0;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Debug;
+		};
+		OBJ_81 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = "$(inherited)";
+				INFOPLIST_FILE = "Advent of Code.xcodeproj/trey_Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) $(TOOLCHAIN_DIR)/usr/lib/swift/macosx @executable_path";
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				OTHER_CFLAGS = "$(inherited)";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited)";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited)";
+				SWIFT_FORCE_DYNAMIC_LINK_STDLIB = YES;
+				SWIFT_FORCE_STATIC_LINK_STDLIB = NO;
+				SWIFT_VERSION = 5.0;
+				TARGET_NAME = trey;
+				TVOS_DEPLOYMENT_TARGET = 9.0;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		OBJ_2 /* Build configuration list for PBXProject "Advent of Code" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				OBJ_3 /* Debug */,
+				OBJ_4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		OBJ_27 /* Build configuration list for PBXNativeTarget "AOC" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				OBJ_28 /* Debug */,
+				OBJ_29 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		OBJ_39 /* Build configuration list for PBXNativeTarget "AOC2019" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				OBJ_40 /* Debug */,
+				OBJ_41 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		OBJ_47 /* Build configuration list for PBXNativeTarget "AOCShared" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				OBJ_48 /* Debug */,
+				OBJ_49 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		OBJ_54 /* Build configuration list for PBXNativeTarget "AOCTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				OBJ_55 /* Debug */,
+				OBJ_56 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		OBJ_68 /* Build configuration list for PBXNativeTarget "Advent of CodePackageDescription" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				OBJ_69 /* Debug */,
+				OBJ_70 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		OBJ_74 /* Build configuration list for PBXAggregateTarget "Advent of CodePackageTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				OBJ_75 /* Debug */,
+				OBJ_76 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		OBJ_79 /* Build configuration list for PBXNativeTarget "trey" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				OBJ_80 /* Debug */,
+				OBJ_81 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = OBJ_1 /* Project object */;
+}
