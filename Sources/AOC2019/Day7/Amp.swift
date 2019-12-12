@@ -17,7 +17,7 @@ class Amp {
     init(phase: Int, memory: [Int]) {
         self.phase = phase
         self.inputs = [phase]
-        self.intcode = Intcode(memory: memory)
+        self.intcode = Intcode(memory: memory.map { Int($0) })
     }
     
     func run(io: Int, feedbackMode: Bool = false) -> Int {
@@ -30,14 +30,14 @@ class Amp {
     
     func runInFeedbackMode(io: Int) -> Int {
         var halted = false
-        inputs.append(io)
+        inputs.append(Int(io))
         while !halted {
             intcode.runUntilNextIO()
             if intcode.halted {
                 halted = true
             } else if intcode.awaitingIO() {
                 halted = inputs.count == 0
-                intcode.io = inputs.removeFirst()
+                intcode.io = Int(inputs.removeFirst())
                 if !halted {
                     intcode.runComputer()
                     intcode.io = nil
@@ -52,7 +52,7 @@ class Amp {
     
     func runInNonFeedbackMode(io: Int) -> Int {
         intcode.runUntilNextIO()
-        intcode.io = inputs.first!
+        intcode.io = Int(inputs.first!)
         intcode.runComputer()
         intcode.io = io
         return intcode.run()

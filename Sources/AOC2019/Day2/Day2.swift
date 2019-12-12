@@ -28,9 +28,9 @@ public class Day2: Day {
     }
     
     func runIntcode(for noun: Int, verb: Int, in memory:[Int]) -> Int {
-        var mem = memory
-        mem[1] = noun
-        mem[2] = verb
+        var mem = memory.map { Int($0) }
+        mem[1] = Int(noun)
+        mem[2] = Int(verb)
         let intcode = Intcode(memory: mem)
         intcode.run()
         return intcode.memory[0]

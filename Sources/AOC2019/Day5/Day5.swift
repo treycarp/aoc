@@ -22,9 +22,9 @@ public class Day5: Day {
     }
     
     func runIntcode(input: Int, in memory:[Int]) -> Int {
-        let mem = memory
+        let mem = memory.map { Int($0) }
         let intcode = Intcode(memory: mem)
-        intcode.io = input
+        intcode.io = Int(input)
         return intcode.run()
     }
 }

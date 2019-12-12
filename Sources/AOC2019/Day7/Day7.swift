@@ -14,12 +14,12 @@ public class Day7: Day {
         var maxOutput = 0
         let phaseSequences = [0,1,2,3,4].permutations
         phaseSequences.forEach {
-            var io = 0
+            var io: Int = 0
             $0.forEach {
                 let amp = Amp(phase: $0, memory: memory)
                 io = amp.run(io: io)
             }
-            maxOutput = max(maxOutput, io)
+            maxOutput = max(maxOutput, Int(io))
         }
 
         return "Part 1 result: \(maxOutput)"
@@ -44,7 +44,7 @@ public class Day7: Day {
         let d = Amp(phase: phases[3], memory: memory)
         let e = Amp(phase: phases[4], memory: memory)
 
-        var lastOutput = 0
+        var lastOutput:Int = 0
         while !e.finished {
             let aOutput = a.run(io: lastOutput, feedbackMode: true)
             let bOutput = b.run(io: aOutput, feedbackMode: true)
@@ -53,6 +53,6 @@ public class Day7: Day {
             lastOutput = e.run(io: dOutput, feedbackMode: true)
         }
         
-        return lastOutput
+        return Int(lastOutput)
     }
 }

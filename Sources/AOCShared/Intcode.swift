@@ -7,9 +7,11 @@
 
 import Foundation
 
-enum Mode {
+enum Mode : Int {
     case positional
     case immediate
+    case relative
+    case unknown
 }
 
 enum Instruction: Int {
@@ -21,6 +23,7 @@ enum Instruction: Int {
     case jumpIfFalse = 6
     case lessThan = 7
     case equals = 8
+    case relative = 9
     case halt = 99
     case unknown
 }
@@ -31,6 +34,7 @@ class Intcode {
     var memory: [Int]
     var position: Int = 0
     private(set) var halted = false
+    var relativeBase: Int = 0
     
     init(memory: [Int]) {
         self.memory = memory
@@ -45,8 +49,8 @@ class Intcode {
     }
     
     func nextInstructionIsIO() -> Bool {
-        return Instruction(rawValue: memory[position] % 100) == .input ||
-            Instruction(rawValue: memory[position] % 100) == .output
+        return Instruction(rawValue: Int(memory[position]) % 100) == .input ||
+            Instruction(rawValue: Int(memory[position]) % 100) == .output
     }
     
     func runUntilNextIO() {
@@ -60,136 +64,146 @@ class Intcode {
     }
     
     func awaitingIO() -> Bool {
-        halted == false && Instruction(rawValue: memory[position] % 100) == .input
+        halted == false && Instruction(rawValue: Int(memory[position]) % 100) == .input
     }
     
     func runComputer() {
-        let fullInstructions = memory[position]
+        let fullInstructions = Int(memory[position])
         let opcode = Instruction(rawValue: fullInstructions % 100)
         switch opcode {
         case .add:
-            add(position: &position, mem: &memory)
+            add(position: &position)
         case .multiply:
-            multiply(position: &position, mem: &memory)
+            multiply(position: &position)
         case .input:
-            input(position: &position, mem: &memory)
+            input(position: &position)
         case .output:
-             output(position: &position, mem: &memory)
+             output(position: &position)
         case .jumpIfTrue:
-            jumpIfTrue(position: &position, mem: &memory)
+            jumpIfTrue(position: &position)
         case .jumpIfFalse:
-            jumpIfFalse(position: &position, mem: &memory)
+            jumpIfFalse(position: &position)
         case .lessThan:
-            lessThan(position: &position, mem: &memory)
+            lessThan(position: &position)
         case .equals:
-            equals(position: &position, mem: &memory)
+            equals(position: &position)
+        case .relative:
+            relative(position: &position)
         case .halt:
-            halt(position: &position, mem: memory)
+            halt(position: &position)
         default:
             print("Invalid opcode: \(opcode!)")
         }
     }
     
-    func determineValues(position: Int, mem: [Int], arguments: Int) -> [Int] {
-        var op = mem[position]
-        op /= 100
-        var modes: Array<Mode> = op.digits.compactMap { $0 == 1 ? .immediate : .positional }
-        while modes.count < arguments { modes.insert(.positional, at: 0) }
-        return modes.reversed().enumerated().map { (index, mode) -> Int in
-            let value = mem[position + index + 1]
-            if mode == .positional {
-                return mem[value]
-            } else {
+    private func mode(_ argIndex: Int) -> Mode {
+        let mask = pow(10.0, Double(argIndex + 2))
+        return Mode(rawValue:(memory[position] / Int(mask)) % 10) ?? .unknown
+    }
+    
+    private subscript(argIndex: Int) -> Int {
+        get {
+            let value = memory[position + argIndex + 1]
+            switch mode(argIndex) {
+            case .positional:
+                return memory[value]
+            case .immediate:
                 return value
+            case .relative:
+                return memory[relativeBase + value]
+            case .unknown:
+                fatalError()
+            }
+        }
+        
+        set {
+            let value = memory[position + argIndex + 1]
+            switch mode(argIndex) {
+            case .positional:
+                memory[value] = newValue
+            case .immediate:
+                fatalError() // Can't be this ever.
+            case .relative:
+                memory[relativeBase + value] = newValue
+            case .unknown:
+                fatalError()
             }
         }
     }
     
-    func add(position: inout Int, mem: inout [Int]) {
-        let params = determineValues(position: position, mem: mem, arguments: 3)
-        let num1 = params[0]
-        let num2 = params[1]
-        let store = mem[position+3]
+    func add(position: inout Int) {
         
-        mem[store] = num1 + num2
+        self[2] = self[0] + self[1]
         position += 4
     }
     
-    func multiply(position: inout Int, mem: inout [Int]) {
-        let params = determineValues(position: position, mem: mem, arguments: 3)
-        let num1 = params[0]
-        let num2 = params[1]
-        let store = mem[position+3]
+    func multiply(position: inout Int) {
         
-        mem[store] = num1 * num2
+        self[2] = self[0] * self[1]
         position += 4
     }
     
-    func input(position: inout Int, mem: inout [Int]) {
-        mem[mem[position+1]] = io!
-        position += 2
-    }
-    
-    func output(position: inout Int, mem: inout [Int]) {
-        io = mem[mem[position+1]]
-        print(mem[mem[position+1]])
-        position += 2
-    }
-    
-    func jumpIfTrue(position: inout Int, mem: inout [Int]) {
-        let params = determineValues(position: position, mem: mem, arguments: 2)
-        let num1 = params[0]
-        let num2 = params[1]
-        if num1 != 0 {
-            position = num2
-        } else {
-           position+=3
-        }
-    }
-    
-    func jumpIfFalse(position: inout Int, mem: inout [Int]) {
-        let params = determineValues(position: position, mem: mem, arguments: 2)
-        let num1 = params[0]
-        let num2 = params[1]
-        if num1 == 0 {
-            position = num2
-        } else {
-           position+=3
-        }
-    }
-    
-    func lessThan(position: inout Int, mem: inout [Int]) {
-        let params = determineValues(position: position, mem: mem, arguments: 3)
-        let num1 = params[0]
-        let num2 = params[1]
-        let store = mem[position+3]
+    func input(position: inout Int) {
         
-        if num1 < num2 {
-            mem[store] = 1
+        self[0] = io!
+        position += 2
+    }
+    
+    func output(position: inout Int) {
+        
+        io = self[0]
+        print("Output: \(io!)")
+        position += 2
+    }
+    
+    func jumpIfTrue(position: inout Int) {
+        
+        if self[0] != 0 {
+            position = self[1]
         } else {
-            mem[store] = 0
+            position+=3
+        }
+    }
+    
+    func jumpIfFalse(position: inout Int) {
+
+        if self[0] == 0 {
+            position = self[1]
+        } else {
+            position+=3
+        }
+    }
+    
+    func lessThan(position: inout Int) {
+        
+        if self[0] < self[1] {
+            self[2] = 1
+        } else {
+            self[2] = 0
         }
         
         position+=4
     }
     
-    func equals(position: inout Int, mem: inout [Int]) {
-        let params = determineValues(position: position, mem: mem, arguments: 3)
-        let num1 = params[0]
-        let num2 = params[1]
-        let store = mem[position+3]
+    func equals(position: inout Int) {
         
-        if num1 == num2 {
-            mem[store] = 1
+        if self[0] == self[1] {
+            self[2] = 1
         } else {
-            mem[store] = 0
+            self[2] = 0
         }
         
         position+=4
     }
     
-    func halt(position: inout Int, mem: [Int]) {
-        position = mem.count
+    func relative(position: inout Int) {
+
+        relativeBase+=self[0]
+        position+=2
+    }
+    
+    func halt(position: inout Int) {
+        position = memory.count
         halted = true
     }
 }
