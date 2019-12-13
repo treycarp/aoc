@@ -50,12 +50,26 @@ class Intcode {
     
     func nextInstructionIsIO() -> Bool {
         return Instruction(rawValue: Int(memory[position]) % 100) == .input ||
-            Instruction(rawValue: Int(memory[position]) % 100) == .output
+            nextInstructionIsWrite()
+    }
+    
+    func nextInstructionIsWrite() -> Bool {
+        Instruction(rawValue: Int(memory[position]) % 100) == .output
     }
     
     func runUntilNextIO() {
         while halted == false {
             if nextInstructionIsIO() {
+                return
+            }
+            
+            runComputer()
+        }
+    }
+    
+    func runUntilNextOutput() {
+        while halted == false {
+            if nextInstructionIsWrite() {
                 return
             }
             

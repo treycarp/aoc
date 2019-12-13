@@ -17,7 +17,7 @@ class Amp {
     init(phase: Int, memory: [Int]) {
         self.phase = phase
         self.inputs = [phase]
-        self.intcode = Intcode(memory: memory.map { Int($0) })
+        self.intcode = Intcode(memory: memory)
     }
     
     func run(io: Int, feedbackMode: Bool = false) -> Int {

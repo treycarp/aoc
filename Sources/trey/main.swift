@@ -2,5 +2,5 @@
 import AOC2019
 import AOC
  
-let d = Day9()
+let d = Day11()
 d.run()

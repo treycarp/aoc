@@ -33,6 +33,7 @@
 		003593D023A019BA00255594 /* Array.swift in Sources */ = {isa = PBXBuildFile; fileRef = 003593CF23A019BA00255594 /* Array.swift */; };
 		003593D323A04EEA00255594 /* Day7.swift in Sources */ = {isa = PBXBuildFile; fileRef = 003593D223A04EEA00255594 /* Day7.swift */; };
 		003593E523A1636B00255594 /* Day9.swift in Sources */ = {isa = PBXBuildFile; fileRef = 003593E423A1636B00255594 /* Day9.swift */; };
+		00E7190E23A2732800315946 /* Day11.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00E7190D23A2732800315946 /* Day11.swift */; };
 		OBJ_31 /* AOC.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_9 /* AOC.swift */; };
 		OBJ_33 /* AOC2019.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "Advent of Code::AOC2019::Product" /* AOC2019.framework */; };
 		OBJ_34 /* AOCShared.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "Advent of Code::AOCShared::Product" /* AOCShared.framework */; };
@@ -143,6 +144,8 @@
 		003593D423A04F6300255594 /* Day7Input.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = Day7Input.txt; sourceTree = "<group>"; };
 		003593E423A1636B00255594 /* Day9.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Day9.swift; sourceTree = "<group>"; };
 		003593E623A167C200255594 /* Day9Input.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = Day9Input.txt; sourceTree = "<group>"; };
+		00E7190D23A2732800315946 /* Day11.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Day11.swift; sourceTree = "<group>"; };
+		00E7190F23A2735800315946 /* Day11Input.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = Day11Input.txt; sourceTree = "<group>"; };
 		"Advent of Code::AOC2019::Product" /* AOC2019.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AOC2019.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		"Advent of Code::AOC::Product" /* AOC.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = AOC.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		"Advent of Code::AOCShared::Product" /* AOCShared.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AOCShared.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -260,6 +263,15 @@
 			path = Day9;
 			sourceTree = "<group>";
 		};
+		00E7190C23A2731100315946 /* Day11 */ = {
+			isa = PBXGroup;
+			children = (
+				00E7190D23A2732800315946 /* Day11.swift */,
+				00E7190F23A2735800315946 /* Day11Input.txt */,
+			);
+			path = Day11;
+			sourceTree = "<group>";
+		};
 		OBJ_10 /* AOC2019 */ = {
 			isa = PBXGroup;
 			children = (
@@ -269,6 +281,7 @@
 				003593D123A04ED400255594 /* Day7 */,
 				003593E323A1635600255594 /* Day9 */,
 				003593C9239F5F2F00255594 /* Day10 */,
+				00E7190C23A2731100315946 /* Day11 */,
 				OBJ_11 /* AOC2019.swift */,
 			);
 			name = AOC2019;
@@ -507,6 +520,7 @@
 				003593B3239F2FBB00255594 /* Input.swift in Sources */,
 				003593BF239F3F2100255594 /* Day2.swift in Sources */,
 				003593C8239F556900255594 /* Numbers.swift in Sources */,
+				00E7190E23A2732800315946 /* Day11.swift in Sources */,
 				003593D023A019BA00255594 /* Array.swift in Sources */,
 				003593B8239F34E900255594 /* Day1.swift in Sources */,
 				003593BC239F356000255594 /* Day.swift in Sources */,
