@@ -75,7 +75,7 @@ public class Day11: Day {
         var memory: [Int] = []
         memory.reserveCapacity(Int(INT32_MAX))
         memory = Array(repeating: Int(0), count: Int(INT32_MAX))
-        let input = Input().numbersCsv(name: "Day11Input.txt")
+        let input = Input().numbersCsv(name: "Day11Input.txt", year: "2019")
         for (index, element) in input.enumerated() {
             memory[index] = Int(element)
         }

@@ -1,6 +1,6 @@
 
-import AOC2019
+import AOC2020
 import AOC
  
-let d = Day11()
+let d = AOC2020.Day1()
 d.run()

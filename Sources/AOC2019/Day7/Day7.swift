@@ -10,7 +10,7 @@ import Foundation
 public class Day7: Day {
     
     public override func part1() -> String {
-        let memory = Input().numbersCsv(name: "Day7Input.txt")
+        let memory = Input().numbersCsv(name: "Day7Input.txt", year: "2019")
         var maxOutput = 0
         let phaseSequences = [0,1,2,3,4].permutations
         phaseSequences.forEach {
@@ -26,7 +26,7 @@ public class Day7: Day {
     }
     
     public override func part2() -> String {
-        let memory = Input().numbersCsv(name: "Day7Input.txt")
+        let memory = Input().numbersCsv(name: "Day7Input.txt", year: "2019")
         
         var maxOutput = 0
         let phaseSequences = [5,6,7,8,9].permutations

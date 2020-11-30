@@ -9,8 +9,8 @@ import Foundation
 
 public final class Input {
     
-    private func readFile(name: String) -> String {
-        let fileURL = inputFileURL(name: name)
+    private func readFile(name: String, year: String) -> String {
+        let fileURL = inputFileURL(name: name, year: year)
         do {
             return try String(contentsOf: fileURL!, encoding: String.Encoding.utf8)
         } catch let error {
@@ -19,9 +19,10 @@ public final class Input {
         return ""
     }
     
-    public func inputFileURL(name: String) -> URL? {
-        let root = URL(fileURLWithPath: "\(#file)").deletingLastPathComponent().deletingLastPathComponent()
-
+    public func inputFileURL(name: String, year: String) -> URL? {
+        let root = URL(fileURLWithPath: "\(#file)").deletingLastPathComponent()
+                                                    .deletingLastPathComponent()
+                                                    .appendingPathComponent("AOC\(year)")
         guard let enumerator = FileManager.default.enumerator(
             at: root,
             includingPropertiesForKeys: [.nameKey],
@@ -39,21 +40,30 @@ public final class Input {
         return nil
     }
     
-    public func numbers(name: String) -> [Int] {
-        let content = readFile(name: name)
+    public func numbers(name: String, year: String) -> [Int] {
+        let content = readFile(name: name, year: year)
         return content.split { $0.isNewline }.compactMap{ Int($0) }
     }
     
-    public func numbersCsv(name: String) -> [Int] {
-        let content = readFile(name: name).trimmingCharacters(in: .newlines)
+    public func numbersCsv(name: String, year: String) -> [Int] {
+        let content = readFile(name: name, year: year).trimmingCharacters(in: .newlines)
         return content.components(separatedBy: ",").compactMap{ Int($0) }
     }
 
-    public func charactersInLines(name: String) -> [[String]] {
-        let content = readFile(name: name).split { $0.isNewline }
+    public func charactersInLines(name: String, year: String) -> [[String]] {
+        let content = readFile(name: name, year: year).split { $0.isNewline }
         var results = [[String]]()
         content.forEach {
             results.append( [String($0)] )
+        }
+        return results
+    }
+    
+    public func arrayOfCharacterLines(name: String, year: String) -> [[String]] {
+        let content = readFile(name: name, year: year).split { $0.isNewline }
+        var results = [[String]]()
+        content.forEach {
+            results.append($0.map { String($0) })
         }
         return results
     }

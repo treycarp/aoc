@@ -166,7 +166,7 @@ class Intcode {
     func output(position: inout Int) {
         
         io = self[0]
-        print("Output: \(io!)")
+        //print("Output: \(io!)")
         position += 2
     }
     

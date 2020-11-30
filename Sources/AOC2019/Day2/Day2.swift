@@ -10,12 +10,12 @@ import Foundation
 public class Day2: Day {
     
     public override func part1() -> String {
-        let numbers = Input().numbersCsv(name: "Day2Input.txt")
+        let numbers = Input().numbersCsv(name: "Day2Input.txt", year: "2019")
         return String(runIntcode(for: 12, verb: 2, in: numbers))
     }
     
     public override func part2() -> String {
-        let numbers = Input().numbersCsv(name: "Day2Input.txt")
+        let numbers = Input().numbersCsv(name: "Day2Input.txt", year: "2019")
         for noun in 0...100 {
             for verb in 0...100 {
                 let result = runIntcode(for: noun, verb: verb, in: numbers)

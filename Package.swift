@@ -12,6 +12,7 @@ let package = Package(
         .library(name: "AOC", targets: ["AOC"]),
         .library(name: "AOCShared", targets: ["AOCShared"]),
         .library(name: "AOC2019", targets: ["AOC2019"]),
+        .library(name: "AOC2020", targets: ["AOC2020"])
     ],
     dependencies: [
         // Dependencies declare other packages that this package depends on.
@@ -21,8 +22,9 @@ let package = Package(
         // Targets are the basic building blocks of a package. A target can define a module or a test suite.
         // Targets can depend on other targets in this package, and on products in packages which this package depends on.
         .target(name: "trey", dependencies: ["AOC"]),
-        .target(name: "AOC", dependencies: ["AOCShared", "AOC2019"]),
+        .target(name: "AOC", dependencies: ["AOCShared", "AOC2019", "AOC2020"]),
         .target(name: "AOC2019", dependencies: ["AOCShared"]),
+        .target(name: "AOC2020", dependencies: ["AOCShared"]),
         .target(name: "AOCShared", dependencies: []),
         
         .testTarget(name: "AOCTests", dependencies: ["AOC"]),

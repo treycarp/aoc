@@ -10,7 +10,7 @@ import Foundation
 public class Day1 : Day {
     
     public override func part1() -> String {
-        let numbers = Input().numbers(name: "Day1Input")
+        let numbers = Input().numbers(name: "Day1Input.txt", year: "2019")
         var sum = 0
         
         numbers.forEach {
@@ -21,7 +21,7 @@ public class Day1 : Day {
     }
     
     public override func part2() -> String {
-        let numbers = Input().numbers(name: "Day1Input")
+        let numbers = Input().numbers(name: "Day1Input.txt", year: "2019")
         var sum = 0
         
         numbers.forEach {

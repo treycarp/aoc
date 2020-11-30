@@ -21,24 +21,32 @@
 /* End PBXAggregateTarget section */
 
 /* Begin PBXBuildFile section */
-		003593B3239F2FBB00255594 /* Input.swift in Sources */ = {isa = PBXBuildFile; fileRef = 003593B2239F2FBB00255594 /* Input.swift */; };
-		003593B8239F34E900255594 /* Day1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 003593AF239F0ED600255594 /* Day1.swift */; };
-		003593BC239F356000255594 /* Day.swift in Sources */ = {isa = PBXBuildFile; fileRef = 003593BB239F356000255594 /* Day.swift */; };
-		003593BF239F3F2100255594 /* Day2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 003593BE239F3F2100255594 /* Day2.swift */; };
-		003593C2239F4DA000255594 /* Intcode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 003593C1239F4DA000255594 /* Intcode.swift */; };
-		003593C5239F4DFD00255594 /* Day5.swift in Sources */ = {isa = PBXBuildFile; fileRef = 003593C4239F4DFD00255594 /* Day5.swift */; };
-		003593C8239F556900255594 /* Numbers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 003593C7239F556900255594 /* Numbers.swift */; };
-		003593CB239F5F3D00255594 /* Day10.swift in Sources */ = {isa = PBXBuildFile; fileRef = 003593CA239F5F3D00255594 /* Day10.swift */; };
-		003593CE23A0197500255594 /* Amp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 003593CD23A0197500255594 /* Amp.swift */; };
-		003593D023A019BA00255594 /* Array.swift in Sources */ = {isa = PBXBuildFile; fileRef = 003593CF23A019BA00255594 /* Array.swift */; };
-		003593D323A04EEA00255594 /* Day7.swift in Sources */ = {isa = PBXBuildFile; fileRef = 003593D223A04EEA00255594 /* Day7.swift */; };
-		003593E523A1636B00255594 /* Day9.swift in Sources */ = {isa = PBXBuildFile; fileRef = 003593E423A1636B00255594 /* Day9.swift */; };
-		00E7190E23A2732800315946 /* Day11.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00E7190D23A2732800315946 /* Day11.swift */; };
+		0011C9632575692800FF239C /* AOCShared.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "Advent of Code::AOCShared::Product" /* AOCShared.framework */; };
+		0011CAD1257570D300FF239C /* Input.swift in Sources */ = {isa = PBXBuildFile; fileRef = 003593B2239F2FBB00255594 /* Input.swift */; };
+		0011CAE7257570F200FF239C /* Day1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 003593AF239F0ED600255594 /* Day1.swift */; };
+		0011CAFE257570FD00FF239C /* Day2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 003593BE239F3F2100255594 /* Day2.swift */; };
+		0011CB062575710000FF239C /* Day5.swift in Sources */ = {isa = PBXBuildFile; fileRef = 003593C4239F4DFD00255594 /* Day5.swift */; };
+		0011CB152575710400FF239C /* Amp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 003593CD23A0197500255594 /* Amp.swift */; };
+		0011CB242575710700FF239C /* Day7.swift in Sources */ = {isa = PBXBuildFile; fileRef = 003593D223A04EEA00255594 /* Day7.swift */; };
+		0011CB332575710A00FF239C /* Day9.swift in Sources */ = {isa = PBXBuildFile; fileRef = 003593E423A1636B00255594 /* Day9.swift */; };
+		0011CB422575710D00FF239C /* Day10.swift in Sources */ = {isa = PBXBuildFile; fileRef = 003593CA239F5F3D00255594 /* Day10.swift */; };
+		0011CB512575710F00FF239C /* Day11.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00E7190D23A2732800315946 /* Day11.swift */; };
+		0011CB602575711200FF239C /* Day13.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0065075523A566CD00F8C551 /* Day13.swift */; };
+		0011CB7E257571EC00FF239C /* Day.swift in Sources */ = {isa = PBXBuildFile; fileRef = 003593BB239F356000255594 /* Day.swift */; };
+		0011CBA3257571F700FF239C /* Numbers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 003593C7239F556900255594 /* Numbers.swift */; };
+		0011CBB2257571FA00FF239C /* Array.swift in Sources */ = {isa = PBXBuildFile; fileRef = 003593CF23A019BA00255594 /* Array.swift */; };
+		0011CBEF2575724100FF239C /* Intcode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 003593C1239F4DA000255594 /* Intcode.swift */; };
+		0011CCC22575757700FF239C /* AOCShared.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "Advent of Code::AOCShared::Product" /* AOCShared.framework */; };
+		0011CCD02575758300FF239C /* Day1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0011CC25257573CB00FF239C /* Day1.swift */; };
+		0011CCD92575758600FF239C /* AOC2020.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0011CC26257573CB00FF239C /* AOC2020.swift */; };
+		0011CD46257575D100FF239C /* AOC2019.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "Advent of Code::AOC2019::Product" /* AOC2019.framework */; };
+		0011CDAD257576E800FF239C /* AOC2020.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0011CCC62575757700FF239C /* AOC2020.framework */; };
+		0011CDCE2575771E00FF239C /* Input.swift in Sources */ = {isa = PBXBuildFile; fileRef = 003593B2239F2FBB00255594 /* Input.swift */; };
+		00EFDE0C257588F200C59A33 /* Input.swift in Sources */ = {isa = PBXBuildFile; fileRef = 003593B2239F2FBB00255594 /* Input.swift */; };
 		OBJ_31 /* AOC.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_9 /* AOC.swift */; };
 		OBJ_33 /* AOC2019.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "Advent of Code::AOC2019::Product" /* AOC2019.framework */; };
 		OBJ_34 /* AOCShared.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "Advent of Code::AOCShared::Product" /* AOCShared.framework */; };
 		OBJ_43 /* AOC2019.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_11 /* AOC2019.swift */; };
-		OBJ_45 /* AOCShared.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "Advent of Code::AOCShared::Product" /* AOCShared.framework */; };
 		OBJ_51 /* AOCShared.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_13 /* AOCShared.swift */; };
 		OBJ_58 /* AdventOfCodeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_18 /* AdventOfCodeTests.swift */; };
 		OBJ_59 /* XCTestManifests.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_19 /* XCTestManifests.swift */; };
@@ -53,6 +61,27 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		0011CCB32575757700FF239C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = OBJ_1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = "Advent of Code::AOCShared";
+			remoteInfo = AOCShared;
+		};
+		0011CD47257575D100FF239C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = OBJ_1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = "Advent of Code::AOC2019";
+			remoteInfo = AOC2019;
+		};
+		0011CDAF257576E800FF239C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = OBJ_1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0011CCB12575757700FF239C;
+			remoteInfo = AOC2020;
+		};
 		003593A4239F0E5400255594 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = OBJ_1 /* Project object */;
@@ -126,6 +155,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0011CC25257573CB00FF239C /* Day1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Day1.swift; sourceTree = "<group>"; };
+		0011CC26257573CB00FF239C /* AOC2020.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AOC2020.swift; sourceTree = "<group>"; };
+		0011CCC62575757700FF239C /* AOC2020.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AOC2020.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		0011CCC72575757700FF239C /* AOC2019 copy-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "AOC2019 copy-Info.plist"; path = "/Users/trey.carpenter/Projects/personal/aoc2019/aoc2019/AOC2019 copy-Info.plist"; sourceTree = "<absolute>"; };
 		003593AF239F0ED600255594 /* Day1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Day1.swift; sourceTree = "<group>"; };
 		003593B1239F2FAA00255594 /* Day1Input.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = Day1Input.txt; sourceTree = "<group>"; };
 		003593B2239F2FBB00255594 /* Input.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Input.swift; sourceTree = "<group>"; };
@@ -144,11 +177,14 @@
 		003593D423A04F6300255594 /* Day7Input.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = Day7Input.txt; sourceTree = "<group>"; };
 		003593E423A1636B00255594 /* Day9.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Day9.swift; sourceTree = "<group>"; };
 		003593E623A167C200255594 /* Day9Input.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = Day9Input.txt; sourceTree = "<group>"; };
+		0065075523A566CD00F8C551 /* Day13.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Day13.swift; sourceTree = "<group>"; };
+		0065075723A56C1100F8C551 /* Day13Input.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = Day13Input.txt; sourceTree = "<group>"; };
 		00E7190D23A2732800315946 /* Day11.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Day11.swift; sourceTree = "<group>"; };
 		00E7190F23A2735800315946 /* Day11Input.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = Day11Input.txt; sourceTree = "<group>"; };
-		"Advent of Code::AOC2019::Product" /* AOC2019.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AOC2019.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		00EFDE0B257588CA00C59A33 /* Day1Input.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = Day1Input.txt; sourceTree = "<group>"; };
+		"Advent of Code::AOC2019::Product" /* AOC2019.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = AOC2019.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		"Advent of Code::AOC::Product" /* AOC.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = AOC.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		"Advent of Code::AOCShared::Product" /* AOCShared.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AOCShared.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		"Advent of Code::AOCShared::Product" /* AOCShared.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = AOCShared.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		"Advent of Code::AOCTests::Product" /* AOCTests.xctest */ = {isa = PBXFileReference; lastKnownFileType = file; path = AOCTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		"Advent of Code::trey::Product" /* trey */ = {isa = PBXFileReference; lastKnownFileType = text; path = trey; sourceTree = BUILT_PRODUCTS_DIR; };
 		OBJ_11 /* AOC2019.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AOC2019.swift; sourceTree = "<group>"; };
@@ -161,10 +197,20 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		0011CCC12575757700FF239C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 0;
+			files = (
+				0011CCC22575757700FF239C /* AOCShared.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		OBJ_32 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 0;
 			files = (
+				0011CDAD257576E800FF239C /* AOC2020.framework in Frameworks */,
+				0011CD46257575D100FF239C /* AOC2019.framework in Frameworks */,
 				OBJ_33 /* AOC2019.framework in Frameworks */,
 				OBJ_34 /* AOCShared.framework in Frameworks */,
 			);
@@ -174,7 +220,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 0;
 			files = (
-				OBJ_45 /* AOCShared.framework in Frameworks */,
+				0011C9632575692800FF239C /* AOCShared.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -208,6 +254,32 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0011CC23257573CB00FF239C /* AOC2020 */ = {
+			isa = PBXGroup;
+			children = (
+				0011CC24257573CB00FF239C /* Day1 */,
+				0011CC26257573CB00FF239C /* AOC2020.swift */,
+			);
+			name = AOC2020;
+			path = Sources/AOC2020;
+			sourceTree = "<group>";
+		};
+		0011CC24257573CB00FF239C /* Day1 */ = {
+			isa = PBXGroup;
+			children = (
+				0011CC25257573CB00FF239C /* Day1.swift */,
+				00EFDE0B257588CA00C59A33 /* Day1Input.txt */,
+			);
+			path = Day1;
+			sourceTree = "<group>";
+		};
+		0011CC87257574CB00FF239C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		003593AE239F0EB600255594 /* Day1 */ = {
 			isa = PBXGroup;
 			children = (
@@ -263,6 +335,15 @@
 			path = Day9;
 			sourceTree = "<group>";
 		};
+		0065075423A566BA00F8C551 /* Day13 */ = {
+			isa = PBXGroup;
+			children = (
+				0065075523A566CD00F8C551 /* Day13.swift */,
+				0065075723A56C1100F8C551 /* Day13Input.txt */,
+			);
+			path = Day13;
+			sourceTree = "<group>";
+		};
 		00E7190C23A2731100315946 /* Day11 */ = {
 			isa = PBXGroup;
 			children = (
@@ -282,6 +363,7 @@
 				003593E323A1635600255594 /* Day9 */,
 				003593C9239F5F2F00255594 /* Day10 */,
 				00E7190C23A2731100315946 /* Day11 */,
+				0065075423A566BA00F8C551 /* Day13 */,
 				OBJ_11 /* AOC2019.swift */,
 			);
 			name = AOC2019;
@@ -337,6 +419,7 @@
 				"Advent of Code::AOC::Product" /* AOC.framework */,
 				"Advent of Code::AOCTests::Product" /* AOCTests.xctest */,
 				"Advent of Code::trey::Product" /* trey */,
+				0011CCC62575757700FF239C /* AOC2020.framework */,
 			);
 			name = Products;
 			sourceTree = BUILT_PRODUCTS_DIR;
@@ -348,6 +431,8 @@
 				OBJ_7 /* Sources */,
 				OBJ_16 /* Tests */,
 				OBJ_20 /* Products */,
+				0011CC87257574CB00FF239C /* Frameworks */,
+				0011CCC72575757700FF239C /* AOC2019 copy-Info.plist */,
 			);
 			sourceTree = "<group>";
 		};
@@ -356,6 +441,7 @@
 			children = (
 				OBJ_8 /* AOC */,
 				OBJ_10 /* AOC2019 */,
+				0011CC23257573CB00FF239C /* AOC2020 */,
 				OBJ_12 /* AOCShared */,
 				OBJ_14 /* trey */,
 			);
@@ -374,6 +460,23 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		0011CCB12575757700FF239C /* AOC2020 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0011CCC32575757700FF239C /* Build configuration list for PBXNativeTarget "AOC2020" */;
+			buildPhases = (
+				0011CCB42575757700FF239C /* Sources */,
+				0011CCC12575757700FF239C /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0011CCB22575757700FF239C /* PBXTargetDependency */,
+			);
+			name = AOC2020;
+			productName = AOC2019;
+			productReference = 0011CCC62575757700FF239C /* AOC2020.framework */;
+			productType = "com.apple.product-type.framework";
+		};
 		"Advent of Code::AOC" /* AOC */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = OBJ_27 /* Build configuration list for PBXNativeTarget "AOC" */;
@@ -386,6 +489,8 @@
 			dependencies = (
 				OBJ_35 /* PBXTargetDependency */,
 				OBJ_37 /* PBXTargetDependency */,
+				0011CD48257575D100FF239C /* PBXTargetDependency */,
+				0011CDB0257576E800FF239C /* PBXTargetDependency */,
 			);
 			name = AOC;
 			productName = AOC;
@@ -484,6 +589,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftMigration = 9999;
+				LastSwiftUpdateCheck = 1220;
 				LastUpgradeCheck = 9999;
 			};
 			buildConfigurationList = OBJ_2 /* Build configuration list for PBXProject "Advent of Code" */;
@@ -505,28 +611,26 @@
 				"Advent of Code::SwiftPMPackageDescription" /* Advent of CodePackageDescription */,
 				"Advent of Code::Advent of CodePackageTests::ProductTarget" /* Advent of CodePackageTests */,
 				"Advent of Code::trey" /* trey */,
+				0011CCB12575757700FF239C /* AOC2020 */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
+		0011CCB42575757700FF239C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 0;
+			files = (
+				00EFDE0C257588F200C59A33 /* Input.swift in Sources */,
+				0011CCD02575758300FF239C /* Day1.swift in Sources */,
+				0011CCD92575758600FF239C /* AOC2020.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		OBJ_30 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 0;
 			files = (
-				003593C2239F4DA000255594 /* Intcode.swift in Sources */,
-				003593C5239F4DFD00255594 /* Day5.swift in Sources */,
-				003593CB239F5F3D00255594 /* Day10.swift in Sources */,
-				003593B3239F2FBB00255594 /* Input.swift in Sources */,
-				003593BF239F3F2100255594 /* Day2.swift in Sources */,
-				003593C8239F556900255594 /* Numbers.swift in Sources */,
-				00E7190E23A2732800315946 /* Day11.swift in Sources */,
-				003593D023A019BA00255594 /* Array.swift in Sources */,
-				003593B8239F34E900255594 /* Day1.swift in Sources */,
-				003593BC239F356000255594 /* Day.swift in Sources */,
-				003593E523A1636B00255594 /* Day9.swift in Sources */,
-				003593CE23A0197500255594 /* Amp.swift in Sources */,
-				003593D323A04EEA00255594 /* Day7.swift in Sources */,
 				OBJ_31 /* AOC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -535,7 +639,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 0;
 			files = (
+				0011CB062575710000FF239C /* Day5.swift in Sources */,
+				0011CAE7257570F200FF239C /* Day1.swift in Sources */,
+				0011CAFE257570FD00FF239C /* Day2.swift in Sources */,
+				0011CB332575710A00FF239C /* Day9.swift in Sources */,
+				0011CB152575710400FF239C /* Amp.swift in Sources */,
+				0011CBEF2575724100FF239C /* Intcode.swift in Sources */,
+				0011CDCE2575771E00FF239C /* Input.swift in Sources */,
+				0011CB422575710D00FF239C /* Day10.swift in Sources */,
+				0011CB242575710700FF239C /* Day7.swift in Sources */,
 				OBJ_43 /* AOC2019.swift in Sources */,
+				0011CB602575711200FF239C /* Day13.swift in Sources */,
+				0011CB512575710F00FF239C /* Day11.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -543,7 +658,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 0;
 			files = (
+				0011CAD1257570D300FF239C /* Input.swift in Sources */,
 				OBJ_51 /* AOCShared.swift in Sources */,
+				0011CBA3257571F700FF239C /* Numbers.swift in Sources */,
+				0011CBB2257571FA00FF239C /* Array.swift in Sources */,
+				0011CB7E257571EC00FF239C /* Day.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -575,6 +694,21 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		0011CCB22575757700FF239C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = "Advent of Code::AOCShared" /* AOCShared */;
+			targetProxy = 0011CCB32575757700FF239C /* PBXContainerItemProxy */;
+		};
+		0011CD48257575D100FF239C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = "Advent of Code::AOC2019" /* AOC2019 */;
+			targetProxy = 0011CD47257575D100FF239C /* PBXContainerItemProxy */;
+		};
+		0011CDB0257576E800FF239C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0011CCB12575757700FF239C /* AOC2020 */;
+			targetProxy = 0011CDAF257576E800FF239C /* PBXContainerItemProxy */;
+		};
 		OBJ_35 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = "Advent of Code::AOC2019" /* AOC2019 */;
@@ -628,6 +762,64 @@
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
+		0011CCC42575757700FF239C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = "$(inherited)";
+				INFOPLIST_FILE = "Advent of Code.xcodeproj/AOC2020_Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) $(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				OTHER_CFLAGS = "$(inherited)";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = AOC2020;
+				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited)";
+				SWIFT_ENFORCE_EXCLUSIVE_ACCESS = off;
+				SWIFT_VERSION = 5.0;
+				TARGET_NAME = AOC2020;
+				TVOS_DEPLOYMENT_TARGET = 9.0;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Debug;
+		};
+		0011CCC52575757700FF239C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = "$(inherited)";
+				INFOPLIST_FILE = "Advent of Code.xcodeproj/AOC2020_Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) $(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				OTHER_CFLAGS = "$(inherited)";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = AOC2020;
+				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited)";
+				SWIFT_ENFORCE_EXCLUSIVE_ACCESS = off;
+				SWIFT_VERSION = 5.0;
+				TARGET_NAME = AOC2020;
+				TVOS_DEPLOYMENT_TARGET = 9.0;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Release;
+		};
 		OBJ_28 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -758,6 +950,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited)";
+				SWIFT_ENFORCE_EXCLUSIVE_ACCESS = off;
 				SWIFT_VERSION = 5.0;
 				TARGET_NAME = AOC2019;
 				TVOS_DEPLOYMENT_TARGET = 9.0;
@@ -786,6 +979,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited)";
+				SWIFT_ENFORCE_EXCLUSIVE_ACCESS = off;
 				SWIFT_VERSION = 5.0;
 				TARGET_NAME = AOC2019;
 				TVOS_DEPLOYMENT_TARGET = 9.0;
@@ -814,6 +1008,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited)";
+				SWIFT_ENFORCE_EXCLUSIVE_ACCESS = off;
 				SWIFT_VERSION = 5.0;
 				TARGET_NAME = AOCShared;
 				TVOS_DEPLOYMENT_TARGET = 9.0;
@@ -842,6 +1037,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited)";
+				SWIFT_ENFORCE_EXCLUSIVE_ACCESS = off;
 				SWIFT_VERSION = 5.0;
 				TARGET_NAME = AOCShared;
 				TVOS_DEPLOYMENT_TARGET = 9.0;
@@ -982,6 +1178,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		0011CCC32575757700FF239C /* Build configuration list for PBXNativeTarget "AOC2020" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0011CCC42575757700FF239C /* Debug */,
+				0011CCC52575757700FF239C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		OBJ_2 /* Build configuration list for PBXProject "Advent of Code" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
