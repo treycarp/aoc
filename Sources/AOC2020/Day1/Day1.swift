@@ -11,10 +11,33 @@ public class Day1 : Day {
     
     public override func part1() -> String {
         let numbers = Input().numbers(name: "Day1Input.txt", year: "2020")
-        return "\(numbers)"
+        var answer = -1
+        numbers.forEach { x in
+            numbers.forEach { y in
+                if sum(x: x, y: y) == 2020 {
+                    answer = x * y
+                }
+            }
+        }
+        return "\(answer)"
     }
     
     public override func part2() -> String {
-        return "Part 2!"
+        let numbers = Input().numbers(name: "Day1Input.txt", year: "2020")
+        var answer = -1
+        numbers.forEach { x in
+            numbers.forEach { y in
+                numbers.forEach { z in
+                    if x + y + z == 2020 {
+                        answer = x * y * z
+                    }
+                }
+            }
+        }
+        return "\(answer)"
+    }
+    
+    func sum(x: Int, y: Int) -> Int {
+        x + y
     }
 }
