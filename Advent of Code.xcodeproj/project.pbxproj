@@ -43,6 +43,7 @@
 		0011CDAD257576E800FF239C /* AOC2020.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0011CCC62575757700FF239C /* AOC2020.framework */; };
 		0011CDCE2575771E00FF239C /* Input.swift in Sources */ = {isa = PBXBuildFile; fileRef = 003593B2239F2FBB00255594 /* Input.swift */; };
 		00EFDE0C257588F200C59A33 /* Input.swift in Sources */ = {isa = PBXBuildFile; fileRef = 003593B2239F2FBB00255594 /* Input.swift */; };
+		00EFDE172576707000C59A33 /* Day2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00EFDE162576706F00C59A33 /* Day2.swift */; };
 		OBJ_31 /* AOC.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_9 /* AOC.swift */; };
 		OBJ_33 /* AOC2019.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "Advent of Code::AOC2019::Product" /* AOC2019.framework */; };
 		OBJ_34 /* AOCShared.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "Advent of Code::AOCShared::Product" /* AOCShared.framework */; };
@@ -182,6 +183,8 @@
 		00E7190D23A2732800315946 /* Day11.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Day11.swift; sourceTree = "<group>"; };
 		00E7190F23A2735800315946 /* Day11Input.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = Day11Input.txt; sourceTree = "<group>"; };
 		00EFDE0B257588CA00C59A33 /* Day1Input.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = Day1Input.txt; sourceTree = "<group>"; };
+		00EFDE162576706F00C59A33 /* Day2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Day2.swift; sourceTree = "<group>"; };
+		00EFDE202576709100C59A33 /* Day2Input.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = Day2Input.txt; sourceTree = "<group>"; };
 		"Advent of Code::AOC2019::Product" /* AOC2019.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = AOC2019.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		"Advent of Code::AOC::Product" /* AOC.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = AOC.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		"Advent of Code::AOCShared::Product" /* AOCShared.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = AOCShared.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -258,6 +261,7 @@
 			isa = PBXGroup;
 			children = (
 				0011CC24257573CB00FF239C /* Day1 */,
+				00EFDE152576706200C59A33 /* Day2 */,
 				0011CC26257573CB00FF239C /* AOC2020.swift */,
 			);
 			name = AOC2020;
@@ -351,6 +355,15 @@
 				00E7190F23A2735800315946 /* Day11Input.txt */,
 			);
 			path = Day11;
+			sourceTree = "<group>";
+		};
+		00EFDE152576706200C59A33 /* Day2 */ = {
+			isa = PBXGroup;
+			children = (
+				00EFDE162576706F00C59A33 /* Day2.swift */,
+				00EFDE202576709100C59A33 /* Day2Input.txt */,
+			);
+			path = Day2;
 			sourceTree = "<group>";
 		};
 		OBJ_10 /* AOC2019 */ = {
@@ -622,6 +635,7 @@
 			buildActionMask = 0;
 			files = (
 				00EFDE0C257588F200C59A33 /* Input.swift in Sources */,
+				00EFDE172576707000C59A33 /* Day2.swift in Sources */,
 				0011CCD02575758300FF239C /* Day1.swift in Sources */,
 				0011CCD92575758600FF239C /* AOC2020.swift in Sources */,
 			);
