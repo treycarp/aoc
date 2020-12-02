@@ -45,6 +45,11 @@ public final class Input {
         return content.split { $0.isNewline }.compactMap{ Int($0) }
     }
     
+    public func strings(name: String, year: String) -> [String] {
+        let content = readFile(name: name, year: year)
+        return content.split { $0.isNewline }.compactMap{ String($0) }
+    }
+    
     public func numbersCsv(name: String, year: String) -> [Int] {
         let content = readFile(name: name, year: year).trimmingCharacters(in: .newlines)
         return content.components(separatedBy: ",").compactMap{ Int($0) }
