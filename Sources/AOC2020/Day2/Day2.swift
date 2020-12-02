@@ -10,6 +10,7 @@ import Foundation
 public class Day2: Day {
     
     public override func part1() -> String {
+        // Make this better
         let strings = Input().strings(name: "Day2Input.txt", year: "2020")
         let validPasswords: [Password] = strings.compactMap {
             let individualStrings = $0.split(separator: " ")
