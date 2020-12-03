@@ -41,10 +41,8 @@
 		0011CCD92575758600FF239C /* AOC2020.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0011CC26257573CB00FF239C /* AOC2020.swift */; };
 		0011CD46257575D100FF239C /* AOC2019.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "Advent of Code::AOC2019::Product" /* AOC2019.framework */; };
 		0011CDAD257576E800FF239C /* AOC2020.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0011CCC62575757700FF239C /* AOC2020.framework */; };
-		0011CDCE2575771E00FF239C /* Input.swift in Sources */ = {isa = PBXBuildFile; fileRef = 003593B2239F2FBB00255594 /* Input.swift */; };
 		006A2FC02577DA60005E4F68 /* Day3.swift in Sources */ = {isa = PBXBuildFile; fileRef = 006A2FA52577DA34005E4F68 /* Day3.swift */; };
 		006A2FFE257951BC005E4F68 /* Day4.swift in Sources */ = {isa = PBXBuildFile; fileRef = 006A2FDB25795178005E4F68 /* Day4.swift */; };
-		00EFDE0C257588F200C59A33 /* Input.swift in Sources */ = {isa = PBXBuildFile; fileRef = 003593B2239F2FBB00255594 /* Input.swift */; };
 		00EFDE172576707000C59A33 /* Day2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00EFDE162576706F00C59A33 /* Day2.swift */; };
 		OBJ_31 /* AOC.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_9 /* AOC.swift */; };
 		OBJ_33 /* AOC2019.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "Advent of Code::AOC2019::Product" /* AOC2019.framework */; };
@@ -660,7 +658,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 0;
 			files = (
-				00EFDE0C257588F200C59A33 /* Input.swift in Sources */,
 				006A2FFE257951BC005E4F68 /* Day4.swift in Sources */,
 				006A2FC02577DA60005E4F68 /* Day3.swift in Sources */,
 				00EFDE172576707000C59A33 /* Day2.swift in Sources */,
@@ -687,7 +684,6 @@
 				0011CB332575710A00FF239C /* Day9.swift in Sources */,
 				0011CB152575710400FF239C /* Amp.swift in Sources */,
 				0011CBEF2575724100FF239C /* Intcode.swift in Sources */,
-				0011CDCE2575771E00FF239C /* Input.swift in Sources */,
 				0011CB422575710D00FF239C /* Day10.swift in Sources */,
 				0011CB242575710700FF239C /* Day7.swift in Sources */,
 				OBJ_43 /* AOC2019.swift in Sources */,

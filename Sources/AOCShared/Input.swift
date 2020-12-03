@@ -7,7 +7,11 @@
 
 import Foundation
 
-public final class Input {
+public class Input {
+    
+    public init() {
+        //Empty init
+    }
     
     private func readFile(name: String, year: String) -> String {
         let fileURL = inputFileURL(name: name, year: year)

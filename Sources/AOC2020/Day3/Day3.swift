@@ -32,8 +32,8 @@ public class Day3: Day {
     public override func part2() -> String {
         let moves: [(Int, Int)] = [ (1,1), (1,3), (1,5), (1,7), (2,1)]
         let field = Input().arrayOfCharacterLines(name: "Day3Input.txt", year: "2020")
-        let answer: Int = moves.reduce(0) {
-            $0 == 0 ? findTrees(field: field, move: $1) : findTrees(field: field, move: $1) * $0
+        let answer: Int = moves.reduce(1) {
+            findTrees(field: field, move: $1) * $0
         }
         return "Answer: \(answer)"
     }
