@@ -54,6 +54,23 @@ public class Input {
         return content.split { $0.isNewline }.compactMap{ String($0) }
     }
     
+    public func stringsByBlankLine(name: String, year: String) -> [String] {
+        let content = readFile(name: name, year: year)
+        var string = ""
+        var strings = [String]()
+        // Not a fan of this..figure something else out.
+        content.split(omittingEmptySubsequences: false, whereSeparator: { $0.isNewline
+        }).forEach {
+            if !$0.isEmpty {
+                string.append(" \(String($0))")
+            } else {
+                strings.append(string)
+                string = ""
+            }
+        }
+        return strings
+    }
+    
     public func numbersCsv(name: String, year: String) -> [Int] {
         let content = readFile(name: name, year: year).trimmingCharacters(in: .newlines)
         return content.components(separatedBy: ",").compactMap{ Int($0) }
