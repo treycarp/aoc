@@ -14,7 +14,7 @@ public class Day1 : Day {
         var answer = -1
         numbers.forEach { x in
             numbers.forEach { y in
-                if sum(x: x, y: y) == 2020 {
+                if x + y == 2020 {
                     answer = x * y
                 }
             }
@@ -35,9 +35,5 @@ public class Day1 : Day {
             }
         }
         return "\(answer)"
-    }
-    
-    func sum(x: Int, y: Int) -> Int {
-        x + y
     }
 }
