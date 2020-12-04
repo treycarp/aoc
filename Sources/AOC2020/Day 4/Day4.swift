@@ -23,9 +23,7 @@ public class Day4: Day {
         let strings = Input().stringsByBlankLine(name: "Day4Input.txt", year: "2020")
         let passports: [Passport] = strings.compactMap { Passport(rawString: $0) }
         let validPassports = passports.filter {
-            let valid = $0.meetsFieldCriteria()
-            print("\(valid ? "Valid" : "Invalid") Passport: \($0.printDescription())")
-            return valid
+            $0.meetsFieldCriteria()
         }
         
         return "Valid passports: \(validPassports.count)"
