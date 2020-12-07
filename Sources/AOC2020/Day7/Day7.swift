@@ -17,11 +17,11 @@ public class Day7: Day {
         }
         var containsShinyGold = Set<Bag>()
         
-//        bags?.forEach {
-//            if bagContainsShinyGold($0) && $0.color != "shiny gold" {
-//                containsShinyGold.insert($0)
-//            }
-//        }
+        bags?.forEach {
+            if bagContainsShinyGold($0) && $0.color != "shiny gold" {
+                containsShinyGold.insert($0)
+            }
+        }
         
         return "Bag count: \(containsShinyGold.count)"
     }
