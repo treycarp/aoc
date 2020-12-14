@@ -150,15 +150,17 @@ public class Day11: Day {
         if col > 0 && row > 0 && rows[row - 1][col - 1] == "#" { count += 1 }
         return count
     }
+    
+    private enum Direction {
+        case north
+        case south
+        case east
+        case west
+        case northeast
+        case northwest
+        case southwest
+        case southeast
+    }
 }
 
-enum Direction {
-    case north
-    case south
-    case east
-    case west
-    case northeast
-    case northwest
-    case southwest
-    case southeast
-}
+
