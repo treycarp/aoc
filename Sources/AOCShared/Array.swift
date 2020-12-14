@@ -27,3 +27,25 @@ public extension Array {
         return rest.permutations.flatMap { $0.interleaved(head) }
     }
 }
+
+public extension Array where Element == Character {
+    // Limitation: all elements are unique (otherwise: `nil` return)
+    func replacementPermute(sampleSize width: Int) -> [String]? {
+        guard count == Set(self).count else { return nil }
+
+        var permutations: [String] = []
+        if let zero = first {
+            let numPerms = ((0..<width).reduce(1) { (p, _) in p * count })
+            permutations.reserveCapacity(numPerms)
+            for i in 0..<numPerms {
+                let nonPaddedPermutation = String(i, radix: count)
+                    .compactMap { Int(String($0), radix: count) }
+                    .map { String(self[$0]) }
+                    .joined()
+                permutations.append(nonPaddedPermutation
+                    .leftPadded(with: zero, toAtLeast: width))
+            }
+        }
+        return permutations
+    }
+}

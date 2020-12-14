@@ -50,6 +50,8 @@
 		002ACED62584F3A900DE6E1D /* Day12.swift in Sources */ = {isa = PBXBuildFile; fileRef = 002ACED52584F3A900DE6E1D /* Day12.swift */; };
 		002ACEF2258666FC00DE6E1D /* Day13.swift in Sources */ = {isa = PBXBuildFile; fileRef = 002ACEF1258666FC00DE6E1D /* Day13.swift */; };
 		002ACF162586F25300DE6E1D /* Math.swift in Sources */ = {isa = PBXBuildFile; fileRef = 002ACF0C2586F24E00DE6E1D /* Math.swift */; };
+		002ACF292586F34D00DE6E1D /* Day14.swift in Sources */ = {isa = PBXBuildFile; fileRef = 002ACF282586F34D00DE6E1D /* Day14.swift */; };
+		002ACF4D2587F5CF00DE6E1D /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 002ACF432587F59400DE6E1D /* String.swift */; };
 		006A2FC02577DA60005E4F68 /* Day3.swift in Sources */ = {isa = PBXBuildFile; fileRef = 006A2FA52577DA34005E4F68 /* Day3.swift */; };
 		006A2FFE257951BC005E4F68 /* Day4.swift in Sources */ = {isa = PBXBuildFile; fileRef = 006A2FDB25795178005E4F68 /* Day4.swift */; };
 		006B1972257AB14700F200BF /* Day5.swift in Sources */ = {isa = PBXBuildFile; fileRef = 006B1958257AB14000F200BF /* Day5.swift */; };
@@ -187,6 +189,9 @@
 		002ACEF1258666FC00DE6E1D /* Day13.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Day13.swift; sourceTree = "<group>"; };
 		002ACF032586672200DE6E1D /* Day13Input.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = Day13Input.txt; sourceTree = "<group>"; };
 		002ACF0C2586F24E00DE6E1D /* Math.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Math.swift; sourceTree = "<group>"; };
+		002ACF282586F34D00DE6E1D /* Day14.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Day14.swift; sourceTree = "<group>"; };
+		002ACF3A2587BDB800DE6E1D /* Day14Input.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = Day14Input.txt; sourceTree = "<group>"; };
+		002ACF432587F59400DE6E1D /* String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
 		003593AF239F0ED600255594 /* Day1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Day1.swift; sourceTree = "<group>"; };
 		003593B1239F2FAA00255594 /* Day1Input.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = Day1Input.txt; sourceTree = "<group>"; };
 		003593B2239F2FBB00255594 /* Input.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Input.swift; sourceTree = "<group>"; };
@@ -333,6 +338,7 @@
 				002ACEB82583E44400DE6E1D /* Day11 */,
 				002ACED42584F39B00DE6E1D /* Day12 */,
 				002ACEF0258666EF00DE6E1D /* Day13 */,
+				002ACF272586F34300DE6E1D /* Day14 */,
 				0011CC26257573CB00FF239C /* AOC2020.swift */,
 			);
 			name = AOC2020;
@@ -398,6 +404,15 @@
 				002ACF032586672200DE6E1D /* Day13Input.txt */,
 			);
 			path = Day13;
+			sourceTree = "<group>";
+		};
+		002ACF272586F34300DE6E1D /* Day14 */ = {
+			isa = PBXGroup;
+			children = (
+				002ACF282586F34D00DE6E1D /* Day14.swift */,
+				002ACF3A2587BDB800DE6E1D /* Day14Input.txt */,
+			);
+			path = Day14;
 			sourceTree = "<group>";
 		};
 		003593AE239F0EB600255594 /* Day1 */ = {
@@ -536,6 +551,7 @@
 				003593C7239F556900255594 /* Numbers.swift */,
 				003593CF23A019BA00255594 /* Array.swift */,
 				002ACF0C2586F24E00DE6E1D /* Math.swift */,
+				002ACF432587F59400DE6E1D /* String.swift */,
 			);
 			name = AOCShared;
 			path = Sources/AOCShared;
@@ -792,6 +808,7 @@
 				0010F6A9257DB0A80049B2A8 /* Day6.swift in Sources */,
 				0010F6D9257FA3E90049B2A8 /* Day8.swift in Sources */,
 				0011CCD92575758600FF239C /* AOC2020.swift in Sources */,
+				002ACF292586F34D00DE6E1D /* Day14.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -829,6 +846,7 @@
 				OBJ_51 /* AOCShared.swift in Sources */,
 				0011CBA3257571F700FF239C /* Numbers.swift in Sources */,
 				0011CBB2257571FA00FF239C /* Array.swift in Sources */,
+				002ACF4D2587F5CF00DE6E1D /* String.swift in Sources */,
 				0011CB7E257571EC00FF239C /* Day.swift in Sources */,
 				002ACF162586F25300DE6E1D /* Math.swift in Sources */,
 			);
