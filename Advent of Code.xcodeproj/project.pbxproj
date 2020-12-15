@@ -52,9 +52,11 @@
 		002ACF162586F25300DE6E1D /* Math.swift in Sources */ = {isa = PBXBuildFile; fileRef = 002ACF0C2586F24E00DE6E1D /* Math.swift */; };
 		002ACF292586F34D00DE6E1D /* Day14.swift in Sources */ = {isa = PBXBuildFile; fileRef = 002ACF282586F34D00DE6E1D /* Day14.swift */; };
 		002ACF4D2587F5CF00DE6E1D /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 002ACF432587F59400DE6E1D /* String.swift */; };
+		002ACF5F2588174E00DE6E1D /* Day12.swift in Sources */ = {isa = PBXBuildFile; fileRef = 002ACF5E2588174E00DE6E1D /* Day12.swift */; };
 		006A2FC02577DA60005E4F68 /* Day3.swift in Sources */ = {isa = PBXBuildFile; fileRef = 006A2FA52577DA34005E4F68 /* Day3.swift */; };
 		006A2FFE257951BC005E4F68 /* Day4.swift in Sources */ = {isa = PBXBuildFile; fileRef = 006A2FDB25795178005E4F68 /* Day4.swift */; };
 		006B1972257AB14700F200BF /* Day5.swift in Sources */ = {isa = PBXBuildFile; fileRef = 006B1958257AB14000F200BF /* Day5.swift */; };
+		00C841572588DE1E00DF5E7B /* Day15.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00C841562588DE1E00DF5E7B /* Day15.swift */; };
 		00EFDE172576707000C59A33 /* Day2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00EFDE162576706F00C59A33 /* Day2.swift */; };
 		OBJ_31 /* AOC.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_9 /* AOC.swift */; };
 		OBJ_33 /* AOC2019.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "Advent of Code::AOC2019::Product" /* AOC2019.framework */; };
@@ -192,6 +194,8 @@
 		002ACF282586F34D00DE6E1D /* Day14.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Day14.swift; sourceTree = "<group>"; };
 		002ACF3A2587BDB800DE6E1D /* Day14Input.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = Day14Input.txt; sourceTree = "<group>"; };
 		002ACF432587F59400DE6E1D /* String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
+		002ACF5E2588174E00DE6E1D /* Day12.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Day12.swift; sourceTree = "<group>"; };
+		002ACF692588176300DE6E1D /* Day12Input.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = Day12Input.txt; sourceTree = "<group>"; };
 		003593AF239F0ED600255594 /* Day1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Day1.swift; sourceTree = "<group>"; };
 		003593B1239F2FAA00255594 /* Day1Input.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = Day1Input.txt; sourceTree = "<group>"; };
 		003593B2239F2FBB00255594 /* Input.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Input.swift; sourceTree = "<group>"; };
@@ -218,6 +222,7 @@
 		006A2FED2579518E005E4F68 /* Day4Input.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = Day4Input.txt; sourceTree = "<group>"; };
 		006B1958257AB14000F200BF /* Day5.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Day5.swift; sourceTree = "<group>"; };
 		006B197B257AB1F200F200BF /* Day5Input.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = Day5Input.txt; sourceTree = "<group>"; };
+		00C841562588DE1E00DF5E7B /* Day15.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Day15.swift; sourceTree = "<group>"; };
 		00E7190D23A2732800315946 /* Day11.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Day11.swift; sourceTree = "<group>"; };
 		00E7190F23A2735800315946 /* Day11Input.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = Day11Input.txt; sourceTree = "<group>"; };
 		00EFDE0B257588CA00C59A33 /* Day1Input.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = Day1Input.txt; sourceTree = "<group>"; };
@@ -339,6 +344,7 @@
 				002ACED42584F39B00DE6E1D /* Day12 */,
 				002ACEF0258666EF00DE6E1D /* Day13 */,
 				002ACF272586F34300DE6E1D /* Day14 */,
+				00C841552588DE0B00DF5E7B /* Day15 */,
 				0011CC26257573CB00FF239C /* AOC2020.swift */,
 			);
 			name = AOC2020;
@@ -413,6 +419,15 @@
 				002ACF3A2587BDB800DE6E1D /* Day14Input.txt */,
 			);
 			path = Day14;
+			sourceTree = "<group>";
+		};
+		002ACF682588175300DE6E1D /* Day12 */ = {
+			isa = PBXGroup;
+			children = (
+				002ACF5E2588174E00DE6E1D /* Day12.swift */,
+				002ACF692588176300DE6E1D /* Day12Input.txt */,
+			);
+			path = Day12;
 			sourceTree = "<group>";
 		};
 		003593AE239F0EB600255594 /* Day1 */ = {
@@ -506,6 +521,14 @@
 			path = Day5;
 			sourceTree = "<group>";
 		};
+		00C841552588DE0B00DF5E7B /* Day15 */ = {
+			isa = PBXGroup;
+			children = (
+				00C841562588DE1E00DF5E7B /* Day15.swift */,
+			);
+			path = Day15;
+			sourceTree = "<group>";
+		};
 		00E7190C23A2731100315946 /* Day11 */ = {
 			isa = PBXGroup;
 			children = (
@@ -534,6 +557,7 @@
 				003593E323A1635600255594 /* Day9 */,
 				003593C9239F5F2F00255594 /* Day10 */,
 				00E7190C23A2731100315946 /* Day11 */,
+				002ACF682588175300DE6E1D /* Day12 */,
 				0065075423A566BA00F8C551 /* Day13 */,
 				OBJ_11 /* AOC2019.swift */,
 			);
@@ -804,6 +828,7 @@
 				006B1972257AB14700F200BF /* Day5.swift in Sources */,
 				002ACE822580E9D600DE6E1D /* Day9.swift in Sources */,
 				002ACE9E2582601200DE6E1D /* Day10.swift in Sources */,
+				00C841572588DE1E00DF5E7B /* Day15.swift in Sources */,
 				002ACED62584F3A900DE6E1D /* Day12.swift in Sources */,
 				0010F6A9257DB0A80049B2A8 /* Day6.swift in Sources */,
 				0010F6D9257FA3E90049B2A8 /* Day8.swift in Sources */,
@@ -835,6 +860,7 @@
 				OBJ_43 /* AOC2019.swift in Sources */,
 				0011CB602575711200FF239C /* Day13.swift in Sources */,
 				0011CB512575710F00FF239C /* Day11.swift in Sources */,
+				002ACF5F2588174E00DE6E1D /* Day12.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
