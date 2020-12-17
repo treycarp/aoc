@@ -30,6 +30,10 @@ public class Math {
         return m * rs.0 + n * rs.1
     }
     
+    public func lcm(_ x: Int, _ y: Int) -> Int {
+        return x / gcd(x, y) * y
+    }
+    
     func coprime(_ m:Int, _ n:Int) -> Bool {
         return gcd(m,n) == 1 ? true : false
     }
