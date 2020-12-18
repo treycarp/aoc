@@ -41,11 +41,29 @@ public class Day10: Day {
     }
     
     override public func part2() -> String {
-        return ""
+        maxAsteriods = 0
+        maxX = 0
+        maxY = 0
+        field = Input().arrayOfCharacterLines(name: "Day10Input.txt", year: "2019")
+        var totalDestroyed = [(Int, Int)]()
+        while totalDestroyed.count < 200 {
+            let asteroidsDestroyed = countAsteroidsFrom(x: 11, y: 13)
+            totalDestroyed.append(contentsOf: asteroidsDestroyed)
+            removeAsteroids(asteroids: asteroidsDestroyed)
+        }
+        
+        return "\(totalDestroyed[200])"
     }
     
-    private func countAsteroidsFrom(x: Int, y: Int) {
-        
+    private func removeAsteroids(asteroids: [(Int, Int)]) {
+        asteroids.forEach {
+            field[$0.0][$0.1] = "."
+        }
+    }
+    
+    @discardableResult
+    private func countAsteroidsFrom(x: Int, y: Int) -> [(Int, Int)] {
+        var asteroidsEncountered = [(Int, Int)]()
         var uniqueSlopes = [Double]()
         var currentY = 0
         for line in field {
@@ -70,6 +88,7 @@ public class Day10: Day {
                 
                 if !uniqueSlopes.contains(radians) {
                     uniqueSlopes.append(radians)
+                    asteroidsEncountered.append((currentX, currentY))
                 }
                 currentX += 1
             }
@@ -82,6 +101,7 @@ public class Day10: Day {
             maxY = y
         }
         maxAsteriods = max(maxAsteriods, uniqueSlopes.count)
-        //print("Visible asteroids for (\(x), \(y)): \(uniqueSlopes.count)")
+        
+        return asteroidsEncountered
     }
 }
