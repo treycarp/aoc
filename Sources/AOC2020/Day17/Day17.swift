@@ -14,8 +14,15 @@ public class Day17: Day {
     }
     
     public override func part2() -> String {
-        
-        return "Answer: \(doTurns(for: .four))"
+        let start = DispatchTime.now() // <<<<<<<<<< Start time
+        let answer = doTurns(for: .four)
+        let end = DispatchTime.now()   // <<<<<<<<<<   end time
+
+        let nanoTime = end.uptimeNanoseconds - start.uptimeNanoseconds // <<<<< Difference in nano seconds (UInt64)
+        let timeInterval = Double(nanoTime) / 1_000_000_000 // Technically could overflow for long running tests
+
+        print("Time to evaluate: \(timeInterval) seconds")
+        return "Answer: \(answer)"
     }
     
     private func doTurns(for dimension: Dimensions) -> Int {
