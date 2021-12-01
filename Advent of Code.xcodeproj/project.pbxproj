@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 46;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXAggregateTarget section */
@@ -68,6 +68,15 @@
 		00A12161274FF67F00F8B6A0 /* AOC2021.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00A1210A274FEFA500F8B6A0 /* AOC2021.swift */; };
 		00A12164274FFB2200F8B6A0 /* Day2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00A12163274FFB2200F8B6A0 /* Day2.swift */; };
 		00A121662750019C00F8B6A0 /* Day2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00A12163274FFB2200F8B6A0 /* Day2.swift */; };
+		00A121692750724300F8B6A0 /* Day3.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00A121672750721200F8B6A0 /* Day3.swift */; };
+		00A1217227516D2700F8B6A0 /* Collections in Frameworks */ = {isa = PBXBuildFile; productRef = 00A1217127516D2700F8B6A0 /* Collections */; };
+		00A1217427516D2700F8B6A0 /* DequeModule in Frameworks */ = {isa = PBXBuildFile; productRef = 00A1217327516D2700F8B6A0 /* DequeModule */; };
+		00A1217627516D2700F8B6A0 /* OrderedCollections in Frameworks */ = {isa = PBXBuildFile; productRef = 00A1217527516D2700F8B6A0 /* OrderedCollections */; };
+		00A1217C27516EC100F8B6A0 /* Collections in Frameworks */ = {isa = PBXBuildFile; productRef = 00A1217B27516EC100F8B6A0 /* Collections */; };
+		00A1217E27516EC100F8B6A0 /* DequeModule in Frameworks */ = {isa = PBXBuildFile; productRef = 00A1217D27516EC100F8B6A0 /* DequeModule */; };
+		00A1218027516EC100F8B6A0 /* OrderedCollections in Frameworks */ = {isa = PBXBuildFile; productRef = 00A1217F27516EC100F8B6A0 /* OrderedCollections */; };
+		00A121812751709100F8B6A0 /* Day4.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00A1216D275141A500F8B6A0 /* Day4.swift */; };
+		00A121832757BAC300F8B6A0 /* Day1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00A121822757BAC300F8B6A0 /* Day1.swift */; };
 		00C841572588DE1E00DF5E7B /* Day15.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00C841562588DE1E00DF5E7B /* Day15.swift */; };
 		00C84173258AF68B00DF5E7B /* Day16.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00C84172258AF68B00DF5E7B /* Day16.swift */; };
 		00C841BA258C5F8900DF5E7B /* Day17.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00C841B9258C5F8900DF5E7B /* Day17.swift */; };
@@ -278,6 +287,12 @@
 		00A1215E274FF3B000F8B6A0 /* Day1Input.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = Day1Input.txt; sourceTree = "<group>"; };
 		00A12163274FFB2200F8B6A0 /* Day2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Day2.swift; sourceTree = "<group>"; };
 		00A12165274FFFF500F8B6A0 /* Day2Input.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = Day2Input.txt; sourceTree = "<group>"; };
+		00A121672750721200F8B6A0 /* Day3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Day3.swift; sourceTree = "<group>"; };
+		00A1216B2750733E00F8B6A0 /* Day3Input.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = Day3Input.txt; sourceTree = "<group>"; };
+		00A1216D275141A500F8B6A0 /* Day4.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Day4.swift; sourceTree = "<group>"; };
+		00A1216F275169DE00F8B6A0 /* Day4Input.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = Day4Input.txt; sourceTree = "<group>"; };
+		00A121822757BAC300F8B6A0 /* Day1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Day1.swift; sourceTree = "<group>"; };
+		00A121842757BAD300F8B6A0 /* Day1Input.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = Day1Input.txt; sourceTree = "<group>"; };
 		00C841562588DE1E00DF5E7B /* Day15.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Day15.swift; sourceTree = "<group>"; };
 		00C84172258AF68B00DF5E7B /* Day16.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Day16.swift; sourceTree = "<group>"; };
 		00C84184258AF69700DF5E7B /* Day16Input.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = Day16Input.txt; sourceTree = "<group>"; };
@@ -342,10 +357,13 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 0;
 			files = (
+				00A1217227516D2700F8B6A0 /* Collections in Frameworks */,
 				00A12153274FF0DF00F8B6A0 /* AOC2018.framework in Frameworks */,
 				0011CDAD257576E800FF239C /* AOC2020.framework in Frameworks */,
 				0011CD46257575D100FF239C /* AOC2019.framework in Frameworks */,
 				00A12158274FF0E300F8B6A0 /* AOC2021.framework in Frameworks */,
+				00A1217627516D2700F8B6A0 /* OrderedCollections in Frameworks */,
+				00A1217427516D2700F8B6A0 /* DequeModule in Frameworks */,
 				OBJ_33 /* AOC2019.framework in Frameworks */,
 				OBJ_34 /* AOCShared.framework in Frameworks */,
 			);
@@ -363,6 +381,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 0;
 			files = (
+				00A1217C27516EC100F8B6A0 /* Collections in Frameworks */,
+				00A1217E27516EC100F8B6A0 /* DequeModule in Frameworks */,
+				00A1218027516EC100F8B6A0 /* OrderedCollections in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -623,6 +644,8 @@
 			children = (
 				00A1210D274FEFB300F8B6A0 /* Day1 */,
 				00A12162274FFB1600F8B6A0 /* Day2 */,
+				00A1216A2750732E00F8B6A0 /* Day3 */,
+				00A1216C2751419900F8B6A0 /* Day4 */,
 				00A12107274FEF8A00F8B6A0 /* AOC2018.swift */,
 			);
 			name = AOC2018;
@@ -642,6 +665,8 @@
 		00A1210C274FEFA900F8B6A0 /* Day1 */ = {
 			isa = PBXGroup;
 			children = (
+				00A121822757BAC300F8B6A0 /* Day1.swift */,
+				00A121842757BAD300F8B6A0 /* Day1Input.txt */,
 			);
 			path = Day1;
 			sourceTree = "<group>";
@@ -662,6 +687,24 @@
 				00A12165274FFFF500F8B6A0 /* Day2Input.txt */,
 			);
 			path = Day2;
+			sourceTree = "<group>";
+		};
+		00A1216A2750732E00F8B6A0 /* Day3 */ = {
+			isa = PBXGroup;
+			children = (
+				00A121672750721200F8B6A0 /* Day3.swift */,
+				00A1216B2750733E00F8B6A0 /* Day3Input.txt */,
+			);
+			path = Day3;
+			sourceTree = "<group>";
+		};
+		00A1216C2751419900F8B6A0 /* Day4 */ = {
+			isa = PBXGroup;
+			children = (
+				00A1216D275141A500F8B6A0 /* Day4.swift */,
+				00A1216F275169DE00F8B6A0 /* Day4Input.txt */,
+			);
+			path = Day4;
 			sourceTree = "<group>";
 		};
 		00C841552588DE0B00DF5E7B /* Day15 */ = {
@@ -922,6 +965,8 @@
 				00A12132274FF09F00F8B6A0 /* PBXTargetDependency */,
 			);
 			name = AOC2018;
+			packageProductDependencies = (
+			);
 			productName = AOC2019;
 			productReference = 00A12152274FF09F00F8B6A0 /* AOC2018.framework */;
 			productType = "com.apple.product-type.framework";
@@ -944,6 +989,11 @@
 				00A1215B274FF0E300F8B6A0 /* PBXTargetDependency */,
 			);
 			name = AOC;
+			packageProductDependencies = (
+				00A1217127516D2700F8B6A0 /* Collections */,
+				00A1217327516D2700F8B6A0 /* DequeModule */,
+				00A1217527516D2700F8B6A0 /* OrderedCollections */,
+			);
 			productName = AOC;
 			productReference = "Advent of Code::AOC::Product" /* AOC.framework */;
 			productType = "com.apple.product-type.framework";
@@ -961,6 +1011,8 @@
 				OBJ_46 /* PBXTargetDependency */,
 			);
 			name = AOC2019;
+			packageProductDependencies = (
+			);
 			productName = AOC2019;
 			productReference = "Advent of Code::AOC2019::Product" /* AOC2019.framework */;
 			productType = "com.apple.product-type.framework";
@@ -977,6 +1029,11 @@
 			dependencies = (
 			);
 			name = AOCShared;
+			packageProductDependencies = (
+				00A1217B27516EC100F8B6A0 /* Collections */,
+				00A1217D27516EC100F8B6A0 /* DequeModule */,
+				00A1217F27516EC100F8B6A0 /* OrderedCollections */,
+			);
 			productName = AOCShared;
 			productReference = "Advent of Code::AOCShared::Product" /* AOCShared.framework */;
 			productType = "com.apple.product-type.framework";
@@ -1051,6 +1108,9 @@
 				en,
 			);
 			mainGroup = OBJ_5;
+			packageReferences = (
+				00A1217027516D2700F8B6A0 /* XCRemoteSwiftPackageReference "swift-collections" */,
+			);
 			productRefGroup = OBJ_20 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -1105,6 +1165,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 0;
 			files = (
+				00A121832757BAC300F8B6A0 /* Day1.swift in Sources */,
 				00A12161274FF67F00F8B6A0 /* AOC2021.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1114,7 +1175,9 @@
 			buildActionMask = 0;
 			files = (
 				00A12160274FF67000F8B6A0 /* AOC2018.swift in Sources */,
+				00A121812751709100F8B6A0 /* Day4.swift in Sources */,
 				00A121662750019C00F8B6A0 /* Day2.swift in Sources */,
+				00A121692750724300F8B6A0 /* Day3.swift in Sources */,
 				00A1215F274FF63300F8B6A0 /* Day1.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1291,7 +1354,10 @@
 				HEADER_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = "Advent of Code.xcodeproj/AOC2020_Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) $(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(TOOLCHAIN_DIR)/usr/lib/swift/macosx",
+				);
 				MACOSX_DEPLOYMENT_TARGET = 10.14;
 				OTHER_CFLAGS = "$(inherited)";
 				OTHER_LDFLAGS = "$(inherited)";
@@ -1320,7 +1386,10 @@
 				HEADER_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = "Advent of Code.xcodeproj/AOC2020_Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) $(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(TOOLCHAIN_DIR)/usr/lib/swift/macosx",
+				);
 				MACOSX_DEPLOYMENT_TARGET = 10.14;
 				OTHER_CFLAGS = "$(inherited)";
 				OTHER_LDFLAGS = "$(inherited)";
@@ -1349,7 +1418,10 @@
 				HEADER_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = "Advent of Code.xcodeproj/AOC2021_Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) $(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(TOOLCHAIN_DIR)/usr/lib/swift/macosx",
+				);
 				MACOSX_DEPLOYMENT_TARGET = 10.14;
 				OTHER_CFLAGS = "$(inherited)";
 				OTHER_LDFLAGS = "$(inherited)";
@@ -1378,7 +1450,10 @@
 				HEADER_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = "Advent of Code.xcodeproj/AOC2021_Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) $(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(TOOLCHAIN_DIR)/usr/lib/swift/macosx",
+				);
 				MACOSX_DEPLOYMENT_TARGET = 10.14;
 				OTHER_CFLAGS = "$(inherited)";
 				OTHER_LDFLAGS = "$(inherited)";
@@ -1407,7 +1482,10 @@
 				HEADER_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = "Advent of Code.xcodeproj/AOC2018_Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) $(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(TOOLCHAIN_DIR)/usr/lib/swift/macosx",
+				);
 				MACOSX_DEPLOYMENT_TARGET = 10.14;
 				OTHER_CFLAGS = "$(inherited)";
 				OTHER_LDFLAGS = "$(inherited)";
@@ -1436,7 +1514,10 @@
 				HEADER_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = "Advent of Code.xcodeproj/AOC2018_Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) $(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(TOOLCHAIN_DIR)/usr/lib/swift/macosx",
+				);
 				MACOSX_DEPLOYMENT_TARGET = 10.14;
 				OTHER_CFLAGS = "$(inherited)";
 				OTHER_LDFLAGS = "$(inherited)";
@@ -1465,7 +1546,10 @@
 				HEADER_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = "Advent of Code.xcodeproj/AOC_Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) $(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(TOOLCHAIN_DIR)/usr/lib/swift/macosx",
+				);
 				MACOSX_DEPLOYMENT_TARGET = 10.14;
 				OTHER_CFLAGS = "$(inherited)";
 				OTHER_LDFLAGS = "$(inherited)";
@@ -1494,7 +1578,10 @@
 				HEADER_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = "Advent of Code.xcodeproj/AOC_Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) $(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(TOOLCHAIN_DIR)/usr/lib/swift/macosx",
+				);
 				MACOSX_DEPLOYMENT_TARGET = 10.14;
 				OTHER_CFLAGS = "$(inherited)";
 				OTHER_LDFLAGS = "$(inherited)";
@@ -1558,7 +1645,8 @@
 				SDKROOT = macosx;
 				SUPPORTED_PLATFORMS = "macosx iphoneos iphonesimulator appletvos appletvsimulator watchos watchsimulator";
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) SWIFT_PACKAGE";
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				USE_HEADERMAP = NO;
 			};
 			name = Release;
@@ -1574,7 +1662,10 @@
 				HEADER_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = "Advent of Code.xcodeproj/AOC2019_Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) $(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(TOOLCHAIN_DIR)/usr/lib/swift/macosx",
+				);
 				MACOSX_DEPLOYMENT_TARGET = 10.14;
 				OTHER_CFLAGS = "$(inherited)";
 				OTHER_LDFLAGS = "$(inherited)";
@@ -1603,7 +1694,10 @@
 				HEADER_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = "Advent of Code.xcodeproj/AOC2019_Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) $(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(TOOLCHAIN_DIR)/usr/lib/swift/macosx",
+				);
 				MACOSX_DEPLOYMENT_TARGET = 10.14;
 				OTHER_CFLAGS = "$(inherited)";
 				OTHER_LDFLAGS = "$(inherited)";
@@ -1632,7 +1726,10 @@
 				HEADER_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = "Advent of Code.xcodeproj/AOCShared_Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) $(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(TOOLCHAIN_DIR)/usr/lib/swift/macosx",
+				);
 				MACOSX_DEPLOYMENT_TARGET = 10.14;
 				OTHER_CFLAGS = "$(inherited)";
 				OTHER_LDFLAGS = "$(inherited)";
@@ -1661,7 +1758,10 @@
 				HEADER_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = "Advent of Code.xcodeproj/AOCShared_Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) $(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(TOOLCHAIN_DIR)/usr/lib/swift/macosx",
+				);
 				MACOSX_DEPLOYMENT_TARGET = 10.14;
 				OTHER_CFLAGS = "$(inherited)";
 				OTHER_LDFLAGS = "$(inherited)";
@@ -1691,7 +1791,11 @@
 				HEADER_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = "Advent of Code.xcodeproj/AOCTests_Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @loader_path/../Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@loader_path/../Frameworks",
+					"@loader_path/Frameworks",
+				);
 				MACOSX_DEPLOYMENT_TARGET = 10.14;
 				OTHER_CFLAGS = "$(inherited)";
 				OTHER_LDFLAGS = "$(inherited)";
@@ -1716,7 +1820,11 @@
 				HEADER_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = "Advent of Code.xcodeproj/AOCTests_Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @loader_path/../Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@loader_path/../Frameworks",
+					"@loader_path/Frameworks",
+				);
 				MACOSX_DEPLOYMENT_TARGET = 10.14;
 				OTHER_CFLAGS = "$(inherited)";
 				OTHER_LDFLAGS = "$(inherited)";
@@ -1769,7 +1877,11 @@
 				HEADER_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = "Advent of Code.xcodeproj/trey_Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) $(TOOLCHAIN_DIR)/usr/lib/swift/macosx @executable_path";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(TOOLCHAIN_DIR)/usr/lib/swift/macosx",
+					"@executable_path",
+				);
 				MACOSX_DEPLOYMENT_TARGET = 10.14;
 				OTHER_CFLAGS = "$(inherited)";
 				OTHER_LDFLAGS = "$(inherited)";
@@ -1794,7 +1906,11 @@
 				HEADER_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = "Advent of Code.xcodeproj/trey_Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) $(TOOLCHAIN_DIR)/usr/lib/swift/macosx @executable_path";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(TOOLCHAIN_DIR)/usr/lib/swift/macosx",
+					"@executable_path",
+				);
 				MACOSX_DEPLOYMENT_TARGET = 10.14;
 				OTHER_CFLAGS = "$(inherited)";
 				OTHER_LDFLAGS = "$(inherited)";
@@ -1912,6 +2028,50 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		00A1217027516D2700F8B6A0 /* XCRemoteSwiftPackageReference "swift-collections" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/apple/swift-collections.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		00A1217127516D2700F8B6A0 /* Collections */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 00A1217027516D2700F8B6A0 /* XCRemoteSwiftPackageReference "swift-collections" */;
+			productName = Collections;
+		};
+		00A1217327516D2700F8B6A0 /* DequeModule */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 00A1217027516D2700F8B6A0 /* XCRemoteSwiftPackageReference "swift-collections" */;
+			productName = DequeModule;
+		};
+		00A1217527516D2700F8B6A0 /* OrderedCollections */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 00A1217027516D2700F8B6A0 /* XCRemoteSwiftPackageReference "swift-collections" */;
+			productName = OrderedCollections;
+		};
+		00A1217B27516EC100F8B6A0 /* Collections */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 00A1217027516D2700F8B6A0 /* XCRemoteSwiftPackageReference "swift-collections" */;
+			productName = Collections;
+		};
+		00A1217D27516EC100F8B6A0 /* DequeModule */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 00A1217027516D2700F8B6A0 /* XCRemoteSwiftPackageReference "swift-collections" */;
+			productName = DequeModule;
+		};
+		00A1217F27516EC100F8B6A0 /* OrderedCollections */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 00A1217027516D2700F8B6A0 /* XCRemoteSwiftPackageReference "swift-collections" */;
+			productName = OrderedCollections;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = OBJ_1 /* Project object */;
 }
