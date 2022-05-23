@@ -49,6 +49,11 @@ public class Input {
         return content.split { $0.isNewline }.compactMap{ Int($0) }
     }
     
+    public func digits(name: String, year: String) -> [[Int]] {
+        let content = readFile(name: name, year: year)
+        return content.split { $0.isNewline }.compactMap{ Int($0)?.digits }
+    }
+    
     public func strings(name: String, year: String, omitBlanks: Bool = true) -> [String] {
         let content = readFile(name: name, year: year)
         return content.split(omittingEmptySubsequences: omitBlanks) { $0.isNewline }.compactMap{ String($0) }

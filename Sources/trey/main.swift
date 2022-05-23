@@ -1,5 +1,5 @@
 
 import AOC
  
-let d = AOC2021.Day4()
+let d = AOC2021.Day14()
 d.run()
