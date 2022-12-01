@@ -59,6 +59,22 @@ public class Input {
         return content.split(omittingEmptySubsequences: omitBlanks) { $0.isNewline }.compactMap{ String($0) }
     }
     
+    public func sumByBlankLine(name: String, year: String) -> [Int] {
+        let content = readFile(name: name, year: year)
+        var sum = 0
+        var sums = [Int]()
+        content.split(omittingEmptySubsequences: false, whereSeparator: { $0.isNewline
+        }).forEach {
+            if !$0.isEmpty {
+                sum += Int($0) ?? 0
+            } else {
+                sums.append(sum)
+                sum = 0
+            }
+        }
+        return sums
+    }
+    
     public func stringsByBlankLine(name: String, year: String) -> [String] {
         let content = readFile(name: name, year: year)
         var string = ""

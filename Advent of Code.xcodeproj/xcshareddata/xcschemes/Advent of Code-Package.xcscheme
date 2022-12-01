@@ -14,35 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "Advent of Code::trey"
-               BuildableName = "trey"
-               BlueprintName = "trey"
-               ReferencedContainer = "container:Advent of Code.xcodeproj">
-            </BuildableReference>
-         </BuildActionEntry>
-         <BuildActionEntry
-            buildForTesting = "YES"
-            buildForRunning = "YES"
-            buildForProfiling = "YES"
-            buildForArchiving = "YES"
-            buildForAnalyzing = "YES">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "Advent of Code::AOCShared"
-               BuildableName = "AOCShared.framework"
-               BlueprintName = "AOCShared"
-               ReferencedContainer = "container:Advent of Code.xcodeproj">
-            </BuildableReference>
-         </BuildActionEntry>
-         <BuildActionEntry
-            buildForTesting = "YES"
-            buildForRunning = "YES"
-            buildForProfiling = "YES"
-            buildForArchiving = "YES"
-            buildForAnalyzing = "YES">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "Advent of Code::AOC"
+               BlueprintIdentifier = "aoc::AOC"
                BuildableName = "AOC.framework"
                BlueprintName = "AOC"
                ReferencedContainer = "container:Advent of Code.xcodeproj">
@@ -56,9 +28,93 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "Advent of Code::AOC2019"
+               BlueprintIdentifier = "aoc::AOC2018"
+               BuildableName = "AOC2018.framework"
+               BlueprintName = "AOC2018"
+               ReferencedContainer = "container:Advent of Code.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "YES"
+            buildForProfiling = "YES"
+            buildForArchiving = "YES"
+            buildForAnalyzing = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "aoc::AOC2019"
                BuildableName = "AOC2019.framework"
                BlueprintName = "AOC2019"
+               ReferencedContainer = "container:Advent of Code.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "YES"
+            buildForProfiling = "YES"
+            buildForArchiving = "YES"
+            buildForAnalyzing = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "aoc::AOC2020"
+               BuildableName = "AOC2020.framework"
+               BlueprintName = "AOC2020"
+               ReferencedContainer = "container:Advent of Code.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "YES"
+            buildForProfiling = "YES"
+            buildForArchiving = "YES"
+            buildForAnalyzing = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "aoc::AOC2021"
+               BuildableName = "AOC2021.framework"
+               BlueprintName = "AOC2021"
+               ReferencedContainer = "container:Advent of Code.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "YES"
+            buildForProfiling = "YES"
+            buildForArchiving = "YES"
+            buildForAnalyzing = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "aoc::AOC2022"
+               BuildableName = "AOC2022.framework"
+               BlueprintName = "AOC2022"
+               ReferencedContainer = "container:Advent of Code.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "YES"
+            buildForProfiling = "YES"
+            buildForArchiving = "YES"
+            buildForAnalyzing = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "aoc::AOCShared"
+               BuildableName = "AOCShared.framework"
+               BlueprintName = "AOCShared"
+               ReferencedContainer = "container:Advent of Code.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "YES"
+            buildForProfiling = "YES"
+            buildForArchiving = "YES"
+            buildForAnalyzing = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "aoc::trey"
+               BuildableName = "trey"
+               BlueprintName = "trey"
                ReferencedContainer = "container:Advent of Code.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -74,7 +130,7 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "Advent of Code::AOCTests"
+               BlueprintIdentifier = "aoc::AOCTests"
                BuildableName = "AOCTests.xctest"
                BlueprintName = "AOCTests"
                ReferencedContainer = "container:Advent of Code.xcodeproj">

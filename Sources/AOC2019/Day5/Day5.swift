@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import AOCShared
 
 public class Day5: Day {
 

@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "Advent of Code::trey"
+               BlueprintIdentifier = "aoc::trey"
                BuildableName = "trey"
                BlueprintName = "trey"
                ReferencedContainer = "container:Advent of Code.xcodeproj">
@@ -32,7 +32,7 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "Advent of Code::AOCTests"
+               BlueprintIdentifier = "aoc::AOCTests"
                BuildableName = "AOCTests.xctest"
                BlueprintName = "AOCTests"
                ReferencedContainer = "container:Advent of Code.xcodeproj">
@@ -54,7 +54,7 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "Advent of Code::trey"
+            BlueprintIdentifier = "aoc::trey"
             BuildableName = "trey"
             BlueprintName = "trey"
             ReferencedContainer = "container:Advent of Code.xcodeproj">
