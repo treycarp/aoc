@@ -15,7 +15,7 @@ public class Day1: Day {
     }
     
     public override func part2() -> String {
-        var lines = Input().sumByBlankLine(name: "Day1Input.txt", year: "2022")
-        return "\(lines.sorted().reversed().dropLast(lines.count - 3).reduce(0, +))"
+        let lines = Input().sumByBlankLine(name: "Day1Input.txt", year: "2022")
+        return "\(lines.sorted().dropFirst(lines.count - 3).reduce(0, +))"
     }
 }
