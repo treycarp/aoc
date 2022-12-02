@@ -21,6 +21,7 @@
 /* End PBXAggregateTarget section */
 
 /* Begin PBXBuildFile section */
+		008D65E1293A7D5500F84B29 /* Day4.swift in Sources */ = {isa = PBXBuildFile; fileRef = 008D65E0293A7D5500F84B29 /* Day4.swift */; };
 		00A83D67293941620079DA92 /* Algorithms in Frameworks */ = {isa = PBXBuildFile; productRef = 00A83D66293941620079DA92 /* Algorithms */; };
 		00A83D6A293941720079DA92 /* Collections in Frameworks */ = {isa = PBXBuildFile; productRef = 00A83D69293941720079DA92 /* Collections */; };
 		00A83D6C293941720079DA92 /* DequeModule in Frameworks */ = {isa = PBXBuildFile; productRef = 00A83D6B293941720079DA92 /* DequeModule */; };
@@ -30,6 +31,7 @@
 		00A83D75293941CF0079DA92 /* OrderedCollections in Frameworks */ = {isa = PBXBuildFile; productRef = 00A83D74293941CF0079DA92 /* OrderedCollections */; };
 		00A83D76293942300079DA92 /* Intcode.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_128 /* Intcode.swift */; };
 		00A83D7A293A290D0079DA92 /* Day2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00A83D79293A290D0079DA92 /* Day2.swift */; };
+		00A83D7E293A708E0079DA92 /* Day3.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00A83D7D293A708E0079DA92 /* Day3.swift */; };
 		OBJ_157 /* AOC.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_9 /* AOC.swift */; };
 		OBJ_159 /* AOC2022.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "aoc::AOC2022::Product" /* AOC2022.framework */; };
 		OBJ_160 /* AOC2021.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "aoc::AOC2021::Product" /* AOC2021.framework */; };
@@ -362,9 +364,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		008D65DF293A7D5500F84B29 /* Day4Input.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = Day4Input.txt; sourceTree = "<group>"; };
+		008D65E0293A7D5500F84B29 /* Day4.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Day4.swift; sourceTree = "<group>"; };
 		00A83D77293943370079DA92 /* Day1Input.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = Day1Input.txt; sourceTree = "<group>"; };
 		00A83D79293A290D0079DA92 /* Day2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Day2.swift; sourceTree = "<group>"; };
 		00A83D7B293A291C0079DA92 /* Day2Input.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = Day2Input.txt; sourceTree = "<group>"; };
+		00A83D7D293A708E0079DA92 /* Day3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Day3.swift; sourceTree = "<group>"; };
+		00A83D7F293A70A00079DA92 /* Day3Input.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = Day3Input.txt; sourceTree = "<group>"; };
 		OBJ_100 /* Day13.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Day13.swift; sourceTree = "<group>"; };
 		OBJ_102 /* Day14.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Day14.swift; sourceTree = "<group>"; };
 		OBJ_104 /* Day2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Day2.swift; sourceTree = "<group>"; };
@@ -549,6 +555,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		008D65DE293A7D4800F84B29 /* Day4 */ = {
+			isa = PBXGroup;
+			children = (
+				008D65E0293A7D5500F84B29 /* Day4.swift */,
+				008D65DF293A7D5500F84B29 /* Day4Input.txt */,
+			);
+			path = Day4;
+			sourceTree = "<group>";
+		};
 		00A83D6F293941CF0079DA92 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -563,6 +578,15 @@
 				00A83D7B293A291C0079DA92 /* Day2Input.txt */,
 			);
 			path = Day2;
+			sourceTree = "<group>";
+		};
+		00A83D7C293A706F0079DA92 /* Day3 */ = {
+			isa = PBXGroup;
+			children = (
+				00A83D7D293A708E0079DA92 /* Day3.swift */,
+				00A83D7F293A70A00079DA92 /* Day3Input.txt */,
+			);
+			path = Day3;
 			sourceTree = "<group>";
 		};
 		OBJ_10 /* AOC2018 */ = {
@@ -656,6 +680,8 @@
 				OBJ_120 /* AOC2022.swift */,
 				OBJ_121 /* Day1 */,
 				00A83D78293A28F90079DA92 /* Day2 */,
+				00A83D7C293A706F0079DA92 /* Day3 */,
+				008D65DE293A7D4800F84B29 /* Day4 */,
 			);
 			name = AOC2022;
 			path = Sources/AOC2022;
@@ -916,7 +942,7 @@
 			path = Day12;
 			sourceTree = "<group>";
 		};
-		OBJ_5 /*  */ = {
+		OBJ_5 = {
 			isa = PBXGroup;
 			children = (
 				OBJ_6 /* Package.swift */,
@@ -929,7 +955,6 @@
 				OBJ_151 /* AOC2020 copy-Info.plist */,
 				00A83D6F293941CF0079DA92 /* Frameworks */,
 			);
-			name = "";
 			sourceTree = "<group>";
 		};
 		OBJ_51 /* Day13 */ = {
@@ -1391,7 +1416,7 @@
 			knownRegions = (
 				en,
 			);
-			mainGroup = OBJ_5 /*  */;
+			mainGroup = OBJ_5;
 			packageReferences = (
 				00A83D65293941620079DA92 /* XCRemoteSwiftPackageReference "swift-algorithms" */,
 				00A83D68293941720079DA92 /* XCRemoteSwiftPackageReference "swift-collections" */,
@@ -1513,7 +1538,9 @@
 			buildActionMask = 0;
 			files = (
 				OBJ_264 /* AOC2022.swift in Sources */,
+				008D65E1293A7D5500F84B29 /* Day4.swift in Sources */,
 				00A83D7A293A290D0079DA92 /* Day2.swift in Sources */,
+				00A83D7E293A708E0079DA92 /* Day3.swift in Sources */,
 				OBJ_265 /* Day1.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
