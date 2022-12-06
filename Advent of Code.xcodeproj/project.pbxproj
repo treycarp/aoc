@@ -22,6 +22,8 @@
 
 /* Begin PBXBuildFile section */
 		008D65E1293A7D5500F84B29 /* Day4.swift in Sources */ = {isa = PBXBuildFile; fileRef = 008D65E0293A7D5500F84B29 /* Day4.swift */; };
+		008D65E5293E66C100F84B29 /* Day5.swift in Sources */ = {isa = PBXBuildFile; fileRef = 008D65E4293E66C100F84B29 /* Day5.swift */; };
+		008D65E9293F77C400F84B29 /* Day6.swift in Sources */ = {isa = PBXBuildFile; fileRef = 008D65E8293F77C400F84B29 /* Day6.swift */; };
 		00A83D67293941620079DA92 /* Algorithms in Frameworks */ = {isa = PBXBuildFile; productRef = 00A83D66293941620079DA92 /* Algorithms */; };
 		00A83D6A293941720079DA92 /* Collections in Frameworks */ = {isa = PBXBuildFile; productRef = 00A83D69293941720079DA92 /* Collections */; };
 		00A83D6C293941720079DA92 /* DequeModule in Frameworks */ = {isa = PBXBuildFile; productRef = 00A83D6B293941720079DA92 /* DequeModule */; };
@@ -366,6 +368,10 @@
 /* Begin PBXFileReference section */
 		008D65DF293A7D5500F84B29 /* Day4Input.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = Day4Input.txt; sourceTree = "<group>"; };
 		008D65E0293A7D5500F84B29 /* Day4.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Day4.swift; sourceTree = "<group>"; };
+		008D65E3293E66C100F84B29 /* Day5Input.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = Day5Input.txt; sourceTree = "<group>"; };
+		008D65E4293E66C100F84B29 /* Day5.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Day5.swift; sourceTree = "<group>"; };
+		008D65E7293F77C400F84B29 /* Day6Input.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = Day6Input.txt; sourceTree = "<group>"; };
+		008D65E8293F77C400F84B29 /* Day6.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Day6.swift; sourceTree = "<group>"; };
 		00A83D77293943370079DA92 /* Day1Input.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = Day1Input.txt; sourceTree = "<group>"; };
 		00A83D79293A290D0079DA92 /* Day2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Day2.swift; sourceTree = "<group>"; };
 		00A83D7B293A291C0079DA92 /* Day2Input.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = Day2Input.txt; sourceTree = "<group>"; };
@@ -564,6 +570,24 @@
 			path = Day4;
 			sourceTree = "<group>";
 		};
+		008D65E2293E66A900F84B29 /* Day5 */ = {
+			isa = PBXGroup;
+			children = (
+				008D65E4293E66C100F84B29 /* Day5.swift */,
+				008D65E3293E66C100F84B29 /* Day5Input.txt */,
+			);
+			path = Day5;
+			sourceTree = "<group>";
+		};
+		008D65E6293F77B100F84B29 /* Day6 */ = {
+			isa = PBXGroup;
+			children = (
+				008D65E8293F77C400F84B29 /* Day6.swift */,
+				008D65E7293F77C400F84B29 /* Day6Input.txt */,
+			);
+			path = Day6;
+			sourceTree = "<group>";
+		};
 		00A83D6F293941CF0079DA92 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -682,6 +706,8 @@
 				00A83D78293A28F90079DA92 /* Day2 */,
 				00A83D7C293A706F0079DA92 /* Day3 */,
 				008D65DE293A7D4800F84B29 /* Day4 */,
+				008D65E2293E66A900F84B29 /* Day5 */,
+				008D65E6293F77B100F84B29 /* Day6 */,
 			);
 			name = AOC2022;
 			path = Sources/AOC2022;
@@ -1541,6 +1567,8 @@
 				008D65E1293A7D5500F84B29 /* Day4.swift in Sources */,
 				00A83D7A293A290D0079DA92 /* Day2.swift in Sources */,
 				00A83D7E293A708E0079DA92 /* Day3.swift in Sources */,
+				008D65E5293E66C100F84B29 /* Day5.swift in Sources */,
+				008D65E9293F77C400F84B29 /* Day6.swift in Sources */,
 				OBJ_265 /* Day1.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -114,4 +114,13 @@ public class Input {
         }
         return results
     }
+    
+    public func characterSets(name: String, year: String) -> [Set<String>] {
+        let content = readFile(name: name, year: year).split { $0.isNewline }
+        var results = [Set<String>]()
+        content.forEach {
+            results.append(Set($0.map { String($0) }))
+        }
+        return results
+    }
 }
